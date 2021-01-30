@@ -27,11 +27,11 @@
   @include transition(all .3s ease-in-out);
 
   @if $reverse-layout {
-    left: -14rem;
-    right: auto;
-  } @else {
     left: auto;
     right: -14rem;
+  } @else {
+    left: -14rem;
+    right: auto;
   }
 
   @if $theme-color != $default {
