@@ -1,6 +1,6 @@
 # Site Info
-title: Codinfox Lanyon
-tagline: 'A Jekyll theme based on Lanyon'
+title: NYCU-EE Notes
+tagline: 'A place for study and research'
 description: 'A Jekyll theme adapted from <a href="http://codinfox.github.io" target="_blank">Codinfox-Lanyon</a>. Made by <a href="http://nycu-ee.github.io" target="_blank">@nycu-ee</a>.'
 url: http://nycu-ee.github.io
 baseurl: ""
@@ -53,8 +53,8 @@ tag_page: '/blog/tags/'
 category_page: '/blog/categories/'
 
 hero:
-  image: /public/img/we_will_be_giants_by_yalestewart.jpg
-  caption: Original Artwork &copy; <a href="http://yalestewart.deviantart.com/art/We-Will-Be-Giants-370176475">Yale Stewart</a>
+  image: /public/img/metadata/machine_learning.png
+  caption: Original Artwork &copy; <a href="https://xkcd.com/1838/">xkcd</a>
 
 # Puglins
 mathjax: true # whether support mathjax
