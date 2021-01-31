@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introducing Lanyon
-catagories: Dev
+categories: Dev
 tags: [beginner, jekyll]
 ---
 

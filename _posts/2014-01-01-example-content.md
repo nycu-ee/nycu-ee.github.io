@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Example content
-catagories: Dev
+categories: Dev
 tags: [beginner, jekyll]
 ---
 

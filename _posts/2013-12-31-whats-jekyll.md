@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What's Jekyll?
-catagories: Dev
+categories: Dev
 tags: [beginner, jekyll]
 ---
 
