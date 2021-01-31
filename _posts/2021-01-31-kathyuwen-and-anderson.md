@@ -7,6 +7,8 @@ tags: [self-introduction]
 
 author: Hsia-Yuwen and Anderson
 
+<!-- more -->
+
 ## Introduction of Hsia-Yuwen
 
 Hey there! I'm Hsia-Yuwen,you can call me "hsia".I'm currently learning how to become a full stack engineer,so , if you have interesting in front-end or back-end.
