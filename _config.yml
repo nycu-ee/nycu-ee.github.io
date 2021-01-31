@@ -54,7 +54,7 @@ category_page: '/blog/categories/'
 
 hero:
   image: /public/img/metadata/machine_learning.png
-  caption: Original Artwork &copy; <a href="https://xkcd.com/1838/">xkcd</a>. Want <a herf="https://nycu-ee.github.io/forbeginner/2021/01/31/beginner-tasks/">join</a> us?
+  caption: Original Artwork &copy; <a href="https://xkcd.com/1838/">xkcd</a>. Want <a href="https://nycu-ee.github.io/forbeginner/2021/01/31/beginner-tasks/">join</a> us?
 
 # Puglins
 mathjax: true # whether support mathjax
