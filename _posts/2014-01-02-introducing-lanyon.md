@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Introducing Lanyon
+catagory: Dev
+tags: [beginner,jekyll]
 ---
 
 Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
@@ -15,6 +17,8 @@ Poole is the Jekyll Butler, serving as an upstanding and effective foundation fo
 * Support for a wide gamut of HTML elements
 * Related posts (time-based, because Jekyll) below each post
 * Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)
+
+<!-- more -->
 
 ### Lanyon features
 
