@@ -19,7 +19,7 @@ author: [zlotus](https://github.com/zlotus/notes-linear-algebra)
 
 我們從求解線性方程組來開始這門課，從一個普通的例子講起：方程組有$2$個未知數，一共有$2$個方程，分別來看方程組的“行圖像”和“列圖像”。
 
-有方程组$\begin{cases}\displaylines{2x&-y&=0\\-x&+2y&=3}\end{cases}$，寫作矩陣形式有$\begin{bmatrix}2&-1\\-1&2\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}=\begin{bmatrix}0\\3\end{bmatrix}$，通常我們把第一個矩陣稱為係數矩陣$A$，將第二個矩陣稱為向量$x$，將第三個矩陣稱為向量$b$，於是線性方程組可以表示為$Ax=b$。
+有方程组$\begin{align}{cases}\displaylines2x&-y&=0\\-x&+2y&=3\end{cases}{align}$，寫作矩陣形式有$\begin{bmatrix}2&-1\\-1&2\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}=\begin{bmatrix}0\\3\end{bmatrix}$，通常我們把第一個矩陣稱為係數矩陣$A$，將第二個矩陣稱為向量$x$，將第三個矩陣稱為向量$b$，於是線性方程組可以表示為$Ax=b$。
 
 我們來看列圖像，即直角坐標系中的圖像：
 
