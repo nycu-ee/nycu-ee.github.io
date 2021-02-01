@@ -13,6 +13,8 @@ author: [zlotus](https://github.com/zlotus/notes-linear-algebra)
 
 [Course video](https://www.youtube.com/watch?v=J7DzL2_Na80&list=PLE7DDD91010BC51F8&index=2&ab_channel=MITOpenCourseWare)
 
+<!-- more -->
+
 # 第一講：方程組的幾何解釋
 
 我們從求解線性方程組來開始這門課，從一個普通的例子講起：方程組有$2$個未知數，一共有$2$個方程，分別來看方程組的“行圖像”和“列圖像”。
