@@ -76,8 +76,6 @@ $\left[\begin{array}{cc|cc}1&3&1&0\\\\2&7&0&1\end{array}\right]$，接下來用�
 * 
  $\left[\begin{array}{cc|cc}1&3&1&0\\\\2&7&0&1\end{array}\right]\xrightarrow{row_2-2row_1}\left[\begin{array}{cc|cc}1&3&1&0\\\\0&1&-2&1\end{array}\right]\xrightarrow{row_1-3row_2}\left[\begin{array}{cc|cc}1&0&7&-3\\\\0&1&-2&1\end{array}\right]$
  
-* 於是，我們就將矩陣從
-$\left[\begin{array}{c|c}A&I\end{array}\right]$變為$\left[\begin{array}{c|c}I&A^{-1}\end{array}\right]$
+* 於是，我們就將矩陣從$\left[\begin{array}{c\|c}A&I\end{array}\right]$變為$\left[\begin{array}{c\|c}I&A^{-1}\end{array}\right]$
 
-而高斯-若爾當法的本質是使用消元矩陣 $E$，對 $A$進行操作，
-$E\left[\begin{array}{c|c}A&I\end{array}\right]$，利用一步步消元有$EA=I$，進而得到$\left[\begin{array}{c|c}I&E\end{array}\right]$，其實這個消元矩陣 $E$就是 $A^{-1}$，而高斯-若爾當法中的$I$只是負責記錄消元的每一步操作，待消元完成，逆矩陣就自然出現了。
+而高斯-若爾當法的本質是使用消元矩陣 $E$，對 $A$進行操作，$E\left[\begin{array}{c\|c}A&I\end{array}\right]$，利用一步步消元有$EA=I$，進而得到$\left[\begin{array}{c\|c}I&E\end{array}\right]$，其實這個消元矩陣 $E$就是 $A^{-1}$，而高斯-若爾當法中的$I$只是負責記錄消元的每一步操作，待消元完成，逆矩陣就自然出現了。
