@@ -73,8 +73,7 @@ $\begin{cases}\begin{bmatrix}1&3\\\\2&7\end{bmatrix}\begin{bmatrix}a\\\\b\end{bm
 
 * 構造這樣一個矩陣
 $\left[\begin{array}{cc|cc}1&3&1&0\\\\2&7&0&1\end{array}\right]$，接下來用消元法將左側變為單位矩陣；
-* 
- $\left[\begin{array}{cc|cc}1&3&1&0\\\\2&7&0&1\end{array}\right]\xrightarrow{row_2-2row_1}\left[\begin{array}{cc|cc}1&3&1&0\\\\0&1&-2&1\end{array}\right]\xrightarrow{row_1-3row_2}\left[\begin{array}{cc|cc}1&0&7&-3\\\\0&1&-2&1\end{array}\right]$
+* $\left[\begin{array}{cc\|cc}1&3&1&0\\\\2&7&0&1\end{array}\right]\xrightarrow{row_2-2row_1}\left[\begin{array}{cc\|cc}1&3&1&0\\\\0&1&-2&1\end{array}\right]\xrightarrow{row_1-3row_2}\left[\begin{array}{cc\|cc}1&0&7&-3\\\\0&1&-2&1\end{array}\right]$
  
 * 於是，我們就將矩陣從$\left[\begin{array}{c\|c}A&I\end{array}\right]$變為$\left[\begin{array}{c\|c}I&A^{-1}\end{array}\right]$
 
