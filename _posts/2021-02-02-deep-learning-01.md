@@ -196,7 +196,7 @@ $$
 \lim_{\Delta x \to 0}{\frac{f(x_0+\Delta x,y_0)-f(x_0,y_0)}{\Delta x}}=A
 $$
 
-函數的極限$A$存在。那麼稱$A$為函數$z=f(x,y)$在點$(x_0,y_0)$處關於自變量$x$的偏導數，記作$f_x(x_0,y_0)$或$\ frac{\partial z}{\partial x}\vert_{y=y_0}^{x=x_0}$或$\frac{\partial f}{\partial x}\vert_{y=y_0}^{x= x_0}$或$z_x\vert_{y=y_0}^{x=x_0}$。
+函數的極限$A$存在。那麼稱$A$為函數$z=f(x,y)$在點$(x_0,y_0)$處關於自變量$x$的偏導數，記作$f_x(x_0,y_0)$或$\frac{\partial z}{\partial x}\vert_{y=y_0}^{x=x_0}$或$\frac{\partial f}{\partial x}\vert_{y=y_0}^{x= x_0}$或$z_x\vert_{y=y_0}^{x=x_0}$。
 
 偏導數在求解時可以將另外一個變量看做常數，利用普通的求導方式求解，比如$z=3x^2+xy$關於$x$的偏導數就為$z_x=6x+y$，這個時候$y$相當於$x$的係數。
 
