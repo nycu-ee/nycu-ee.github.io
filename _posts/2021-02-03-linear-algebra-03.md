@@ -11,7 +11,7 @@ author: [zlotus](https://github.com/zlotus/notes-linear-algebra)
 >
 > 這是MIT 18.06 Linear-Algebra 的學習筆記	
 
-[Course video](https://www.youtube.com/watch?v=QVKj3LADCnA&list=PLE7DDD91010BC51F8&index=3&ab_channel=MITOpenCourseWare)
+[Course video](https://www.youtube.com/watch?v=FX4C-JpTFgY&list=PLE7DDD91010BC51F8&index=4)
 
 <!-- more -->
 
@@ -47,7 +47,8 @@ author: [zlotus](https://github.com/zlotus/notes-linear-algebra)
     
     注意，$A_{coli}B_{rowi}$是一個$m\times 1$向量乘以一個$1\times p$向量，其結果是一個$m\times p$矩陣，而所有的$m\times p$矩陣之和就是計算結果。
 
-* 分塊乘法：$\left[\begin{array}{c|c}A_1&A_2\\\\\hline A_3&A_4\end{array}\right]\left[\begin{array}{c|c}B_1&B_2\\\\\hline B_3&B_4\end{array}\right]=\left[\begin{array}{c|c}A_1B_1+A_2B_3&A_1B_2+A_2B_4\\\\\hline A_3B_1+A_4B_3&A_3B_2+A_4B_4\end{array}\right]$
+* 分塊乘法：
+$\left[\begin{array}{c|c}A_1&A_2\\\\\hline A_3&A_4\end{array}\right]\left[\begin{array}{c|c}B_1&B_2\\\\\hline B_3&B_4\end{array}\right]=\left[\begin{array}{c|c}A_1B_1+A_2B_3&A_1B_2+A_2B_4\\\\\hline A_3B_1+A_4B_3&A_3B_2+A_4B_4\end{array}\right]$
 
     在分塊合適的情況下，可以簡化運算。
 
