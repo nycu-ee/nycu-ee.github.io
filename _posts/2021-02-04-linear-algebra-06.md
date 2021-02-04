@@ -23,25 +23,25 @@ author: [zlotus](https://github.com/zlotus/notes-linear-algebra)
 
 $$
 \begin{bmatrix}
-a_{11} & a_{12} & \cdots & a_{1(n-1)} & a_{1n} \\\\
-a_{21} & a_{22} & \cdots & a_{2(n-1)} & a_{2n} \\\\
-\vdots & \vdots & \ddots & \vdots & \vdots \\\\
-a_{m1} & a_{m2} & \cdots & a_{m(n-1)} & a_{mn} \\\\
+a_{11} & a_{12} & \cdots & a_{1(n-1)} & a_{1n} \\
+a_{21} & a_{22} & \cdots & a_{2(n-1)} & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots & \vdots \\
+a_{m1} & a_{m2} & \cdots & a_{m(n-1)} & a_{mn} \\
 \end{bmatrix}
 \cdot
 \begin{bmatrix}
-x_{1} \\\\
-x_{2} \\\\
-\vdots \\\\
-x_{n-1} \\\\
-x_{n} \\\\
+x_{1} \\
+x_{2} \\
+\vdots \\
+x_{n-1} \\
+x_{n} \\
 \end{bmatrix}
 =
 \begin{bmatrix}
-b_{1} \\\\
-b_{2} \\\\
-\vdots \\\\
-b_{m} \\\\
+b_{1} \\
+b_{2} \\
+\vdots \\
+b_{m} \\
 \end{bmatrix}
 $$
 
