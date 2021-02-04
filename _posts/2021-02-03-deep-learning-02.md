@@ -1088,7 +1088,7 @@ $$
 5. 標準化特征向量，得到特征向量矩陣 $W$ 。
 6. 轉化樣本集中的每個樣本 $z^{(i)} = W^T x^{(i)}$ 。
 7. 得到輸出矩陣 $D' = \left( z^{(1)},z^{(2)},...,z^{(n)} \right)$ 。
-*注*：在降維時，有時不明確目標維數，而是指定降維到的主成分比重閾值 $k(k \epsilon(0,1])$ 。假設 $n$ 個特征值為 $\lambda_1 \geqslant \lambda_2 \geqslant ... \geqslant \lambda_n$ ，則 $n'$ 可從 $\sum^{n'}_{i=1} \lambda_i \geqslant k \times \sum^n_{i=1} \lambda_i$ 得到。
+*注*：在降維時，有時不明確目標維數，而是指定降維到的主成分比重閾值 $k(k \epsilon(0,1])$ 。假設 $n$ 個特征值為 $\lambda_1 \geqslant \lambda_2 \geqslant ... \geqslant \lambda_n$ ，則 $n'$ 可從 $$\sum^{n'}_{i=1} \lambda_i \geqslant k \times \sum^n_{i=1} \lambda_i$$ 得到。
 
 ### 2.15.5 PCA算法主要優缺點
 |優缺點|簡要說明|
@@ -1495,7 +1495,7 @@ $$
 
 ### 2.16.19 為什麽使用標準差 
 
-方差公式為：$S^2_{N}=\frac{1}{N}\sum_{i=1}^{N}(x_{i}-\bar{x})^{2}$
+方差公式為：$S_{N}^{2}=\frac{1}{N}\sum_{i=1}^{N}(x_{i}-\bar{x})^{2}$
 
 標準差公式為：$S_{N}=\sqrt{\frac{1}{N}\sum_{i=1}^{N}(x_{i}-\bar{x})^{2}}$
 
