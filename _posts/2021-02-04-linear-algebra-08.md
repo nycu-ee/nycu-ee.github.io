@@ -76,7 +76,6 @@ x_p=
 $$。
 
 令$Ax=b$成立的所有解：
-
 $$
 \Big\lbrace
 \begin{eqnarray}
