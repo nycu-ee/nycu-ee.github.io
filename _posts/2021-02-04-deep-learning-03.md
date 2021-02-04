@@ -263,7 +263,7 @@ $$
 
 ​	其中，$ D $ 是深度；$ F $ 是 filter 的大小；$ w_{d,m,n} $ 表示 filter 的第 $ d $ 層第 $ m $ 行第 $ n $ 列權重；$ a_{d,i,j} $ 表示 feature map 的第 $ d $ 層第 $ i $ 行第 $ j $ 列像素；其它的符號含義前面相同，不再贅述。
 
-​	每個卷積層可以有多個 filter。每個 filter 和原始圖像進行卷積後，都可以得到一個 Feature Map。卷積後 Feature Map 的深度(個數)和卷積層的 filter 個數相同。下面的圖示顯示了包含兩個 filter 的卷積層的計算。 $7*7*3$ 輸入，經過兩個 $3*3*3$ filter 的卷積(步幅為 $2$)，得到了 $3*3*2$ 的輸出。圖中的 Zero padding 是 $1$，也就是在輸入元素的周圍補了一圈 $0$。
+​	每個卷積層可以有多個 filter。每個 filter 和原始圖像進行卷積後，都可以得到一個 Feature Map。卷積後 Feature Map 的深度(個數)和卷積層的 filter 個數相同。下面的圖示顯示了包含兩個 filter 的卷積層的計算。 $$7*7*3$$ 輸入，經過兩個 $3*3*3$ filter 的卷積(步幅為 $2$)，得到了 $3*3*2$ 的輸出。圖中的 Zero padding 是 $1$，也就是在輸入元素的周圍補了一圈 $0$。
 
 ![](/public/img/deep-learning-03/3.2.3.6.png)
 
@@ -491,7 +491,7 @@ $$
 
 6. softmax 函數
 
-   函數定義為： $ \sigma(z)_j = \frac{e^{z_j}}{\sum_{k=1}^K e^{z_k}} $。
+   函數定義為： $$\sigma(z)_j = \frac{e^{z_j}}{\sum_{k=1}^K e^{z_k}} $$。
 
    Softmax 多用於多分類神經網絡輸出。
 
