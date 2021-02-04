@@ -263,7 +263,7 @@ $$
 
 ​	其中，$ D $ 是深度；$ F $ 是 filter 的大小；$ w_{d,m,n} $ 表示 filter 的第 $ d $ 層第 $ m $ 行第 $ n $ 列權重；$ a_{d,i,j} $ 表示 feature map 的第 $ d $ 層第 $ i $ 行第 $ j $ 列像素；其它的符號含義前面相同，不再贅述。
 
-​	每個卷積層可以有多個 filter。每個 filter 和原始圖像進行卷積後，都可以得到一個 Feature Map。卷積後 Feature Map 的深度(個數)和卷積層的 filter 個數相同。下面的圖示顯示了包含兩個 filter 的卷積層的計算。 $$7*7*3$$ 輸入，經過兩個 $3*3*3$ filter 的卷積(步幅為 $2$)，得到了 $3*3*2$ 的輸出。圖中的 Zero padding 是 $1$，也就是在輸入元素的周圍補了一圈 $0$。
+​	每個卷積層可以有多個 filter。每個 filter 和原始圖像進行卷積後，都可以得到一個 Feature Map。卷積後 Feature Map 的深度(個數)和卷積層的 filter 個數相同。下面的圖示顯示了包含兩個 filter 的卷積層的計算。 $$7*7*3$$ 輸入，經過兩個 $$3*3*3$$ filter 的卷積(步幅為 $2$)，得到了 $$3*3*2$$ 的輸出。圖中的 Zero padding 是 $1$，也就是在輸入元素的周圍補了一圈 $0$。
 
 ![](/public/img/deep-learning-03/3.2.3.6.png)
 
@@ -348,7 +348,7 @@ $$
 
 這樣前向傳播的過程就結束了，我們得到輸出值為 $ [0.75136079 ,  0.772928465] $，與實際值 $ [0.01 , 0.99] $ 相差還很遠，現在我們對誤差進行反向傳播，更新權值，重新計算輸出。
 
-**反向傳播 **
+**反向傳播**
 
 ​	1.計算總誤差
 
@@ -658,13 +658,13 @@ $s^{,}(x)=s(x)*(1-s(x))\in (0,\frac{1}{4}]$
 
 在計算機視覺任務中, 由於其簡易性, 良好的表現, 與對分類任務的概率性理解, Cross Entropy Loss (交叉熵代價) + Softmax 組合被廣泛應用於以分類任務為代表的任務中. 在此應用下, 我們可將其學習過程進一步理解為: 更相似(同類/同物體)的圖像在特征域中擁有“更近的距離”, 相反則”距離更遠“. 換而言之, 我們可以進一步理解為其學習了一種低類內距離(Intra-class Distance)與高類間距離(Inter-class Distance)的特征判別模型. 在此Center Loss則可以高效的計算出這種具判別性的特征. 不同於傳統的Softmax Loss, Center Loss通過學習“特征中心”從而最小化其類內距離. 其表達形式如下:
 
-$L_{C} = \frac{1}{2}\sum^{m}_{i=1}\|\|x_{i}-c_{y_{i}}\|\|^{2}_{2}$
+$$L_{C} = \frac{1}{2}\sum^{m}_{i=1}\|\|x_{i}-c_{y_{i}}\|\|^{2}_{2}$$
 
 其中$x_{i}$表示FCN(全連接層)之前的特征, $c_{y_{i}}$表示第$y_{i} $個類別的特征中心, $m$表示mini-batch的大小. 我們很清楚的看到$L_{C}$的終極目標為最小化每個特征與其特征中心的方差, 即最小化類內距離. 其叠代公式為:
 
 $\frac{\partial L_{C}}{\partial x_{i}}=x_{i}-c_{y_{i}}$
 
-$\Delta{c_{j}} = \frac{\sum^{m}_{i=1}\delta(y_{i}=j)\cdot(c_{j}-x_{i})}{1+\sum^{m}_{i=1}\delta(y_{i}=j)}$
+$$\Delta{c_{j}} = \frac{\sum^{m}_{i=1}\delta(y_{i}=j)\cdot(c_{j}-x_{i})}{1+\sum^{m}_{i=1}\delta(y_{i}=j)}$$
 
 其中$$\delta(condition)=\left\{
 \begin{array}{rcl}
@@ -673,7 +673,7 @@ $\Delta{c_{j}} = \frac{\sum^{m}_{i=1}\delta(y_{i}=j)\cdot(c_{j}-x_{i})}{1+\sum^{
 
 結合Softmax, 我們可以搭配二者使用, 適當平衡這兩種監督信號. 在Softmax拉開類間距離的同時, 利用Center Loss最小化類內距離. 例如:
 
-$\begin{eqnarray}L & = & L_{S} + \lambda L_{C} \\ &=& -\sum^{m}_{i=1}log\frac{e^{W_{y}^{T}x_{i}+b_{y_{i}}}}{\sum^{m}_{i=1}e^{W^{T}_{j}x_{i}+b_{j}}} + \frac{\lambda}{2}\sum^{m}_{i=1}\|\|x_{i}-c_{y_{i}}\|\|^{2}_{2}\\ \end{eqnarray}$
+$$\begin{eqnarray}L & = & L_{S} + \lambda L_{C} \\ &=& -\sum^{m}_{i=1}log\frac{e^{W_{y}^{T}x_{i}+b_{y_{i}}}}{\sum^{m}_{i=1}e^{W^{T}_{j}x_{i}+b_{j}}} + \frac{\lambda}{2}\sum^{m}_{i=1}\|\|x_{i}-c_{y_{i}}\|\|^{2}_{2}\\ \end{eqnarray}$$
 
 即便如此, Center Loss仍有它的不足之處: 其特征中心為存儲在網絡模型之外的額外參數, 不能與模型參數一同優化. 這些額外參數將與記錄每一步特征變化的自動回歸均值估計(autoregressive mean estimator)進行更叠. 當需要學習的類別數量較大時, mini-batch可能無力提供足夠的樣本進行均值估計. 若此Center Loss將需要平衡兩種監督損失來以確定更叠, 其過程需要一個對平衡超參數的搜索過程, 使得其擇值消耗昂貴.
 
