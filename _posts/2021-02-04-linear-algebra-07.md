@@ -21,9 +21,9 @@ author: [zlotus](https://github.com/zlotus/notes-linear-algebra)
 $
 A=
 \begin{bmatrix}
-1 & 2 & 2 & 2\\
-2 & 4 & 6 & 8\\
-3 & 6 & 8 & 10\\
+1 & 2 & 2 & 2 \\\\
+2 & 4 & 6 & 8 \\\\
+3 & 6 & 8 & 10 \\\\
 \end{bmatrix}
 $，求$Ax=0$的特解：
 
@@ -50,9 +50,9 @@ $$
 自由行中的變量為自由變量（free variable），自由變量的個數為$n-r=4-2=2$。
 
 通常，給自由行變量賦值，去求主行變量的值。如，令$x_2=1, x_4=0$求得特解
-$x=c_1\begin{bmatrix}-2\\1\\0\\0\\\end{bmatrix}$；
+$x=c_1\begin{bmatrix}-2\\\\1\\\\0\\\\0\\\\\end{bmatrix}$；
 再令$x_2=0, x_4=1$求得特解
-$x=c_2\begin{bmatrix}2\\0\\-2\\1\\\end{bmatrix}$。
+$x=c_2\begin{bmatrix}2\\\\0\\\\-2\\\\1\\\\\end{bmatrix}$。
 
 該例還能進一步簡化，即將$U$矩陣化簡為$R$矩陣（Reduced row echelon form），即簡化列階梯形式。
 
@@ -116,10 +116,10 @@ $$
 $
 N=
 \begin{bmatrix}
--2 & 2 \\
-0 & -2 \\
-1 & 0 \\
-0 & 1 \\
+-2 & 2 \\\\
+0 & -2 \\\\
+1 & 0 \\\\
+0 & 1 \\\\
 \end{bmatrix}
 $，與上面求得的兩個$x$特解一致。
 
@@ -127,24 +127,24 @@ $，與上面求得的兩個$x$特解一致。
 $
 A=
 \begin{bmatrix}
-1 & 2 & 3 \\
-2 & 4 & 6 \\
-2 & 6 & 8 \\
-2 & 8 & 10 \\
+1 & 2 & 3 \\\\
+2 & 4 & 6 \\\\
+2 & 6 & 8 \\\\
+2 & 8 & 10 \\\\
 \end{bmatrix}
 \underrightarrow{消元}
 \begin{bmatrix}
-1 & 2 & 3 \\
-0 & 2 & 2 \\
-0 & 0 & 0 \\
-0 & 0 & 0 \\
+1 & 2 & 3 \\\\
+0 & 2 & 2 \\\\
+0 & 0 & 0 \\\\
+0 & 0 & 0 \\\\
 \end{bmatrix}
 \underrightarrow{化簡}
 \begin{bmatrix}
-1 & 0 & 1 \\
-0 & 1 & 1 \\
-0 & 0 & 0 \\
-0 & 0 & 0 \\
+1 & 0 & 1 \\\\
+0 & 1 & 1 \\\\
+0 & 0 & 0 \\\\
+0 & 0 & 0 \\\\
 \end{bmatrix}
 =R
 $
@@ -155,8 +155,8 @@ $
 $
 x=c
 \begin{bmatrix}
--1 \\
--1 \\
-1 \\
+-1 \\\\
+-1 \\\\
+1 \\\\
 \end{bmatrix}
 $
