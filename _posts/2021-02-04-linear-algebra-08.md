@@ -66,14 +66,14 @@ $$
 x_1 & = & -2 \\
 x_3 & = & \frac{3}{2} \\
 \end{eqnarray*}
-$
+$$
 ，代入$Ax=b$求得特解
 $$
 x_p=
 \begin{bmatrix}
 -2 \\\\ 0 \\\\ \frac{3}{2} \\\\ 0
 \end{bmatrix}
-$。
+$$。
 
 令$Ax=b$成立的所有解：
 
