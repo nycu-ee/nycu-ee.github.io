@@ -30,7 +30,7 @@ $n$階方陣的置換矩陣$P$有$\binom{n}{1}=n!$個
 即$P^T = P^{-1}$
 ## 轉置矩陣（Transpose Matrix）
 
-$$(A^T)_{ij}=(A)_{ji}$$
+$A^{T}_{ji}=A_{ji}$
 
 ## 對稱矩陣（Symmetric Matrix）
 
@@ -39,8 +39,8 @@ $A^T$ = $A$
 對任意矩陣$R$有$R^TR$為對稱矩陣：
 
 $$
-\leftline{(R^TR)^T = (R)^T(R^T)^T = R^TR\\
-\textrm{即}(R^TR)^T = R^TR}
+(R^TR)^T = (R)^T(R^T)^T = R^TR\\
+\textrm{即}(R^TR)^T = R^TR
 $$
 
 ## 向量空間（Vector Space）
