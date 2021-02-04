@@ -18,14 +18,14 @@ author: [zlotus](https://github.com/zlotus/notes-linear-algebra)
 # 第七講：求解$Ax=0$，主變量，特解
 
 舉例：$3 \times 4$矩陣
-$
+$$
 A=
 \begin{bmatrix}
 1 & 2 & 2 & 2 \\\\
 2 & 4 & 6 & 8 \\\\
 3 & 6 & 8 & 10 \\\\
 \end{bmatrix}
-$，求$Ax=0$的特解：
+$$，求$Ax=0$的特解：
 
 找出主變量（pivot variable）：
 $$
