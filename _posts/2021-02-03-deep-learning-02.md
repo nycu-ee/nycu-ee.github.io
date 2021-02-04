@@ -972,7 +972,7 @@ $$
 \frac{\boldsymbol w^T(u_0-u_1)(u_0-u_1)^T\boldsymbol w}{\boldsymbol w^T(\sum_0 + \sum_1)\boldsymbol w} =
 \frac{\boldsymbol w^TS_b\boldsymbol w}{\boldsymbol w^TS_w\boldsymbol w}
 $$
-​	根據廣義瑞利商的性質，矩陣 $S^{-1}_{w}S_b$ 的最大特征值為 $J(\boldsymbol w)$ 的最大值，矩陣 $S^{-1}_{w}S_b$ 的最大特征值對應的特征向量即為 $(\boldsymbol w)$。
+​	根據廣義瑞利商的性質，矩陣 $$S^{-1}_{w}S_b$$ 的最大特征值為 $J(\boldsymbol w)$ 的最大值，矩陣 $S^{-1}_{w}S_b$ 的最大特征值對應的特征向量即為 $(\boldsymbol w)$。
 
 ### 2.14.4 LDA算法流程總結
 LDA算法降維流程如下：
@@ -1039,7 +1039,7 @@ LDA算法降維流程如下：
 
 ​	假設數據集是m個n維，$(x^{(1)}, x^{(2)},...,x^{(m)})$，且數據進行了中心化。經過投影變換得到新坐標為 ${w_1,w_2,...,w_n}$，其中 $w$ 是標準正交基，即 $\| w \|_2 = 1$，$w^T_iw_j = 0$。
 
-​	經過降維後，新坐標為 $\{ w_1,w_2,...,w_n \}$，其中 $n'$ 是降維後的目標維數。樣本點 $x^{(i)}$ 在新坐標系下的投影為 $z^{(i)} = \left(z^{(i)}_1, z^{(i)}_2, ..., z^{(i)}_{n'}   \right)$，其中 $z^{(i)}_j = w^T_j x^{(i)}$ 是 $x^{(i)} $ 在低維坐標系里第 j 維的坐標。
+​	經過降維後，新坐標為 $\{ w_1,w_2,...,w_n \}$，其中 $n'$ 是降維後的目標維數。樣本點 $x^{(i)}$ 在新坐標系下的投影為 $$z^{(i)} = \left(z^{(i)}_1, z^{(i)}_2, ..., z^{(i)}_{n'}   \right)$$，其中 $z^{(i)}_j = w^T_j x^{(i)}$ 是 $x^{(i)} $ 在低維坐標系里第 j 維的坐標。
 
 ​	如果用 $z^{(i)} $ 去恢覆 $x^{(i)} $ ，則得到的恢覆數據為 $\widehat{x}^{(i)} = \sum^{n'}_{j=1} x^{(i)}_j w_j = Wz^{(i)}$，其中 $W$為標準正交基組成的矩陣。
 
@@ -1091,6 +1091,7 @@ $$
 *注*：在降維時，有時不明確目標維數，而是指定降維到的主成分比重閾值 $k(k \epsilon(0,1])$ 。假設 $n$ 個特征值為 $\lambda_1 \geqslant \lambda_2 \geqslant ... \geqslant \lambda_n$ ，則 $n'$ 可從 $$\sum^{n'}_{i=1} \lambda_i \geqslant k \times \sum^n_{i=1} \lambda_i$$ 得到。
 
 ### 2.15.5 PCA算法主要優缺點
+
 |優缺點|簡要說明|
 |:-:|:-|
 |優點|1.僅僅需要以方差衡量信息量，不受數據集以外的因素影響。<br />2.各主成分之間正交，可消除原始數據成分間的相互影響的因素。<br />3.計算方法簡單，主要運算是特征值分解，易於實現。|
@@ -1756,10 +1757,12 @@ $$
 L(\boldsymbol w, b,\boldsymbol a) =   \frac{1}{2}||\boldsymbol w||^2 + \sum_{i=1}^m\alpha_i(1 - y_i(\boldsymbol w^T\boldsymbol x_i+b))
 $$
 $p^*$為原問題的最小值，對應的$w,b$分別為$w^*,b^*$,則對於任意的$a>0$:
+
 $$
 p^*=\frac{1}{2}||\boldsymbol w^*||^2 \geqslant  L(\boldsymbol w^*, b,\boldsymbol a) \geqslant \min_{\boldsymbol w, b} L(\boldsymbol w, b,\boldsymbol a)
 $$
-則 $\min_{\boldsymbol w, b}L(\boldsymbol w, b,\boldsymbol a)$是問題（1）的一個下界。
+
+則 $$\min_{\boldsymbol w, b}L(\boldsymbol w, b,\boldsymbol a)$$是問題（1）的一個下界。
 
 此時，取最大值即可求得好的下界，即
 $$
@@ -2257,10 +2260,10 @@ Lassio縮減系數法、小波分析法、
 
 ### 2.21.5 聚類和分類有什麽區別
 
-**聚類（Clustering） **
+**聚類（Clustering）**
     聚類，簡單地說就是把相似的東西分到一組，聚類的時候，我們並不關心某一類是什麽，我們需要實現的目標只是把相似的東西聚到一起。一個聚類算法通常只需要知道如何計算相似度就可以開始工作了，因此聚類通常並不需要使用訓練數據進行學習，在機器學習中屬於無監督學習。 
 
-**分類（Classification） **
+**分類（Classification）**
 
 ​     分類，對於一個分類器，通常需要你告訴它“這個東西被分為某某類”。一般情況下，一個分類器會從它得到的訓練集中進行學習，從而具備對未知數據進行分類的能力，在機器學習中屬於監督學習。
 
