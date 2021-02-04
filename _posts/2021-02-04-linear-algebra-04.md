@@ -20,8 +20,8 @@ author: [zlotus](https://github.com/zlotus/notes-linear-algebra)
 $AB$的逆矩陣：
 $$
 \begin{aligned}
-A \cdot A^{-1} = I & = A^{-1} \cdot A\\
-(AB) \cdot (B^{-1}A^{-1}) & = I\\
+A \cdot A^{-1} = I & = A^{-1} \cdot A\\\\
+(AB) \cdot (B^{-1}A^{-1}) & = I\\\\
 \textrm{則} AB \textrm{的逆矩陣為} & B^{-1}A^{-1}
 \end{aligned}
 $$
@@ -29,8 +29,8 @@ $$
 $A^{T}$的逆矩陣：
 $$
 \begin{aligned}
-(A \cdot A^{-1})^{T} & = I^{T}\\
-(A^{-1})^{T} \cdot A^{T} & = I\\
+(A \cdot A^{-1})^{T} & = I^{T}\\\\
+(A^{-1})^{T} \cdot A^{T} & = I\\\\
 \textrm{則} A^{T} \textrm{的逆矩陣為} & (A^{-1})^{T}
 \end{aligned}
 $$
@@ -40,17 +40,17 @@ $$
 1. 第一步，將$a_{11}$作為主元，需要的運算量約為$n^2$
 $$
 \begin{bmatrix}
-a_{11} & a_{12} & \cdots & a_{1n} \\
-a_{21} & a_{22} & \cdots & a_{2n} \\
-\vdots & \vdots & \ddots & \vdots \\
-a_{n1} & a_{n2} & \cdots & a_{nn} \\
+a_{11} & a_{12} & \cdots & a_{1n} \\\\
+a_{21} & a_{22} & \cdots & a_{2n} \\\\
+\vdots & \vdots & \ddots & \vdots \\\\
+a_{n1} & a_{n2} & \cdots & a_{nn} \\\\
 \end{bmatrix}
 \underrightarrow{消元}
 \begin{bmatrix}
-a_{11} & a_{12} & \cdots & a_{1n} \\
-0      & a_{22} & \cdots & a_{2n} \\
-0      & \vdots & \ddots & \vdots \\
-0      & a_{n2} & \cdots & a_{nn} \\
+a_{11} & a_{12} & \cdots & a_{1n} \\\\
+0      & a_{22} & \cdots & a_{2n} \\\\
+0      & \vdots & \ddots & \vdots \\\\
+0      & a_{n2} & \cdots & a_{nn} \\\\
 \end{bmatrix}
 $$
 
@@ -63,34 +63,34 @@ $$
 3階方陣的置換矩陣有6個：
 $$
 \begin{bmatrix}
-1 & 0 & 0 \\
-0 & 1 & 0 \\
-0 & 0 & 1 \\
+1 & 0 & 0 \\\\
+0 & 1 & 0 \\\\
+0 & 0 & 1 \\\\
 \end{bmatrix}
 \begin{bmatrix}
-0 & 1 & 0 \\
-1 & 0 & 0 \\
-0 & 0 & 1 \\
+0 & 1 & 0 \\\\
+1 & 0 & 0 \\\\
+0 & 0 & 1 \\\\
 \end{bmatrix}
 \begin{bmatrix}
-0 & 0 & 1 \\
-0 & 1 & 0 \\
-1 & 0 & 0 \\
+0 & 0 & 1 \\\\
+0 & 1 & 0 \\\\
+1 & 0 & 0 \\\\
 \end{bmatrix}
 \begin{bmatrix}
-1 & 0 & 0 \\
-0 & 0 & 1 \\
-0 & 1 & 0 \\
+1 & 0 & 0 \\\\
+0 & 0 & 1 \\\\
+0 & 1 & 0 \\\\
 \end{bmatrix}
 \begin{bmatrix}
-0 & 1 & 0 \\
-0 & 0 & 1 \\
-1 & 0 & 0 \\
+0 & 1 & 0 \\\\
+0 & 0 & 1 \\\\
+1 & 0 & 0 \\\\
 \end{bmatrix}
 \begin{bmatrix}
-0 & 0 & 1 \\
-1 & 0 & 0 \\
-0 & 1 & 0 \\
+0 & 0 & 1 \\\\
+1 & 0 & 0 \\\\
+0 & 1 & 0 \\\\
 \end{bmatrix}
 $$
 

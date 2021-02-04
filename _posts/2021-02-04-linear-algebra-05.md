@@ -39,7 +39,7 @@ $A^T$ = $A$
 對任意矩陣$R$有$R^TR$為對稱矩陣：
 
 $$
-(R^TR)^T = (R)^T(R^T)^T = R^TR\\
+(R^TR)^T = (R)^T(R^T)^T = R^TR\\\\
 \textrm{即}(R^TR)^T = R^TR
 $$
 
