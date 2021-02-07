@@ -23,7 +23,7 @@ author: [zlotus](https://github.com/zlotus/notes-linear-algebra)
 
 * 零空間$N(A) \in \mathbb{R}^n, dim N(A)=n-r$，自由元所在的行即可組成零空間的一組基。
 
-* 行空間$C(A) \in \mathbb{R}^m, dim C(A)=r$，主元所在的行即可組成列空間的一組基。
+* 行空間$C(A) \in \mathbb{R}^m, dim C(A)=r$，主元所在的行即可組行空間的一組基。
 
 * 左零空間$N(A^T) \in \mathbb{R}^m, dim N(A^T)=m-r$，基見例2。
 
