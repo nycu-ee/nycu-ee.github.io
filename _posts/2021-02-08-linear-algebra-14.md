@@ -58,14 +58,14 @@ $$
 所以這個等式告訴我們，$x$同$A$中的所有列正交；
 
 接下來還驗證$x$是否與$A$中各行的線性組合正交，
-$
+$$
 \begin{cases}
-c_1(row_1)^Tx=0 \\\\
-c_2(row_2)^Tx=0 \\\\
-\vdots \\\\
-c_n(row_m)^Tx=0 \\\\
+c_1(row_1)^Tx=0 \\
+c_2(row_2)^Tx=0 \\
+\vdots \\
+c_n(row_m)^Tx=0 \\
 \end{cases}
-$，各式相加得$(c_1row_1+c_2row_2+\cdots+c_nrow_m)^Tx=0$，得證。
+$$，各式相加得$(c_1row_1+c_2row_2+\cdots+c_nrow_m)^Tx=0$，得證。
 
 我們可以說，列空間與零空間將$\mathbb{R}^n$分割為兩個正交的子空間，同樣的，行空間與左零空間將$\mathbb{R}^m$分割為兩個正交的子空間。
 
