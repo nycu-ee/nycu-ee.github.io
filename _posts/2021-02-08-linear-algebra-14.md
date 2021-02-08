@@ -65,7 +65,7 @@ c_2(row_2)^Tx=0 \\
 \vdots \\
 c_n(row_m)^Tx=0 \\
 \end{cases}
-$$，各式相加得$(c_1row_1+c_2row_2+\cdots+c_nrow_m)^Tx=0$，得證。
+$$，各式相加得$$(c_1row_1+c_2row_2+\cdots+c_nrow_m)^Tx=0$$，得證。
 
 我們可以說，列空間與零空間將$\mathbb{R}^n$分割為兩個正交的子空間，同樣的，行空間與左零空間將$\mathbb{R}^m$分割為兩個正交的子空間。
 
