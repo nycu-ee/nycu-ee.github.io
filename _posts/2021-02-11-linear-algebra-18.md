@@ -51,4 +51,4 @@ author: [zlotus](https://github.com/zlotus/notes-linear-algebra)
 
 10. $\det A^T=\det A$，前面一直在關注列的屬性給行列式帶來的變化，有了這條性質，列的屬性同樣適用於行，比如對性質2就有“交換行行列式變號”。
     
-    證明：$$\left|A^T\right|=\left|A\right|\rightarrow\left|U^TL^T\right|=\left|LU\right|\rightarrow\left|U^T\right|\left|L^T\right|=\left|L\right|\left|U\right|$$，值得注意的是，$L, U$的行列式並不因為轉置而改變，得證。
+    證明：$$\left\|A^T\right\|=\left\|A\right\|\rightarrow\left\|U^TL^T\right\|=\left\|LU\right\|\rightarrow\left\|U^T\right\|\left\|L^T\right\|=\left\|L\right\|\left\|U\right\|$$，值得注意的是，$L, U$的行列式並不因為轉置而改變，得證。
