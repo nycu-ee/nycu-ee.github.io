@@ -38,7 +38,7 @@ author: [zlotus](https://github.com/zlotus/notes-linear-algebra)
 
 特征值和特征向量給我們了一個深入理解矩陣冪運算的方法，$A^k=S\Lambda^kS^{-1}$。
 
-再來看一個矩陣冪運算的應用：如果$k\to\infty$，則$A^k\to 0$（趨於穩定）的條件是什麽？從$S\Lambda^kS^{-1}$易得，$|\lambda_i|<1$。再次強調，所有運算的前提是矩陣$A$存在$n$個線性無關的特征向量。如果沒有$n$個線性無關的特征向量，則矩陣就不能對角化。
+再來看一個矩陣冪運算的應用：如果$k\to\infty$，則$A^k\to 0$（趨於穩定）的條件是什麽？從$S\Lambda^kS^{-1}$易得，$$|\lambda_i|<1$$。再次強調，所有運算的前提是矩陣$A$存在$n$個線性無關的特征向量。如果沒有$n$個線性無關的特征向量，則矩陣就不能對角化。
 
 關於矩陣可對角化的條件：
 
@@ -66,9 +66,9 @@ $0,1,1,2,3,5,8,13,\cdots,F_{100}=?$，我們要求第一百項的公式，並觀
 
 已知$F_{k+2}=F_{k_1}+F_{k}$，但這不是$u_{k+1}=Au_{k}$的形式，而且我們只要一個方程，而不是方程組，同時這是一個二階差分方程（就像含有二階導數的微分方程，希望能夠化簡為一階倒數，也就是一階差分）。
 
-使用一個**小技巧**，令$u_{k}=\begin{bmatrix}F_{k+1}\\F_{k}\end{bmatrix}$，再追加一個方程組成方程組：$$\begin{cases}F_{k+2}&=F_{k+1}+F_{k}\\F_{k+1}&=F_{k+1}\end{cases}$$，再把方程組用矩陣表達得到$$\begin{bmatrix}F_{k+2}\\F_{k+1}\end{bmatrix}=\begin{bmatrix}1&1\\1&0\end{bmatrix}\begin{bmatrix}F_{k+1}\\F_{k}\end{bmatrix}$$，於是我們得到了$$u_{k+1}=Au_{k}, A=\begin{bmatrix}1&1\\1&0\end{bmatrix}$$。我們把二階標量方程（second-order scalar problem）轉化為一階向量方程組（first-order system）。
+使用一個**小技巧**，令$$u_{k}=\begin{bmatrix}F_{k+1}\\F_{k}\end{bmatrix}$$，再追加一個方程組成方程組：$$\begin{cases}F_{k+2}&=F_{k+1}+F_{k}\\F_{k+1}&=F_{k+1}\end{cases}$$，再把方程組用矩陣表達得到$$\begin{bmatrix}F_{k+2}\\F_{k+1}\end{bmatrix}=\begin{bmatrix}1&1\\1&0\end{bmatrix}\begin{bmatrix}F_{k+1}\\F_{k}\end{bmatrix}$$，於是我們得到了$$u_{k+1}=Au_{k}, A=\begin{bmatrix}1&1\\1&0\end{bmatrix}$$。我們把二階標量方程（second-order scalar problem）轉化為一階向量方程組（first-order system）。
 
-我們的矩陣$$A=\begin{bmatrix}1&1\\1&0\end{bmatrix}$$是一個對稱矩陣，所以它的特征值將會是實數，且他的特征向量將會互相正交。因為是二階，我們可以直接利用跡與行列式解方程組$$\begin{cases}\lambda_1+\lambda_2&=1\\\lambda_1\cdot\lambda_2&=-1\end{cases}$$。在求解之前，我們先寫出一般解法並觀察$$\left|A-\lambda I\right|=\begin{vmatrix}1-\lambda&1\\1&-\lambda\end{vmatrix}=\lambda^2-\lambda-1=0$$，與前面斐波那契數列的遞歸式$F_{k+2}=F_{k+1}+F_{k}\rightarrow F_{k+2}-F_{k+1}-F_{k}=0$比較，我們发現這兩個式子在項數與冪次上非常相近。
+我們的矩陣$$A=\begin{bmatrix}1&1\\1&0\end{bmatrix}$$是一個對稱矩陣，所以它的特征值將會是實數，且他的特征向量將會互相正交。因為是二階，我們可以直接利用跡與行列式解方程組$$\begin{cases}\lambda_1+\lambda_2&=1\\\lambda_1\cdot\lambda_2&=-1\end{cases}$$。在求解之前，我們先寫出一般解法並觀察$$\left\|A-\lambda I\right\|=\begin{vmatrix}1-\lambda&1\\1&-\lambda\end{vmatrix}=\lambda^2-\lambda-1=0$$，與前面斐波那契數列的遞歸式$F_{k+2}=F_{k+1}+F_{k}\rightarrow F_{k+2}-F_{k+1}-F_{k}=0$比較，我們发現這兩個式子在項數與冪次上非常相近。
 
 * 用求根公式解特征值得$$\begin{cases}\lambda_1=\frac{1}{2}\left(1+\sqrt{5}\right)\approx{1.618}\\\lambda_2=\frac{1}{2}\left(1-\sqrt{5}\right)\approx{-0.618}\end{cases}$$，得到兩個不同的特征值，一定會有兩個線性無關的特征向量，則該矩陣可以被對角化。
 
