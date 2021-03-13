@@ -77,7 +77,7 @@ $$
 
 $$f^Tg=\int f(x)g(x)\mathrm{d}x$$
 
-在本例中，由於傅里葉級數使用正余弦函數，它們的周期都可以算作$2\pi$，所以本例的函數點積可以寫作$f^Tg=\int_0^{2\pi}f(x)g(x)\mathrm{d}x$。我來檢驗一個內積$$\int_0^{2\pi}\sin{x}\cos{x}\mathrm{d}x=\left.\frac{1}{2}\sin^2x\right\|_0^{2\pi}=0$$，其余的三角函數族正交性結果可以參考[傅里葉級數](https://zh.wikipedia.org/wiki/%E5%82%85%E9%87%8C%E5%8F%B6%E7%BA%A7%E6%95%B0)的“希爾伯特空間的解讀”一節。
+在本例中，由於傅里葉級數使用正余弦函數，它們的周期都可以算作$2\pi$，所以本例的函數點積可以寫作$f^Tg=\int_0^{2\pi}f(x)g(x)\mathrm{d}x$。我來檢驗一個內積$\int_0^{2\pi}\sin{x}\cos{x}\mathrm{d}x=\left.\frac{1}{2}\sin^2x\right\|_0^{2\pi}=0$，其余的三角函數族正交性結果可以參考[傅里葉級數](https://zh.wikipedia.org/wiki/%E5%82%85%E9%87%8C%E5%8F%B6%E7%BA%A7%E6%95%B0)的“希爾伯特空間的解讀”一節。
 
 最後我們來看$\cos x$項的系數是多少（$a_0$是$f(x)$的平均值）。同向量空間中的情形一樣，我們在等式兩邊同時做$\cos x$的內積，原式變為$\int_0^{2\pi}f(x)\cos x\mathrm{d}x=a_1\int_0^{2\pi}\cos^2x\mathrm{d}x$，因為正交性等式右邊僅有$\cos x$項不為零。進一步化簡得$a_1\pi=\int_0^{2\pi}f(x)\cos x\mathrm{d}x\rightarrow a_1=\frac{1}{\pi}\int_0^{2\pi}f(x)\cos x\mathrm{d}x$。
 
