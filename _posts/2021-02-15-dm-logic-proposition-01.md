@@ -177,7 +177,7 @@ $$
 $$
 
 $$
-  \lnot(p \land q) \equiv \lnot p \lor lnot q
+  \lnot(p \land q) \equiv \lnot p \lor \lnot q
 $$
 
 ## 條件語句與雙條件語句
