@@ -121,7 +121,7 @@ $$
 $$
 
 $$
-  (p \land q) \and r \equiv p \land (q \land r)
+  (p \land q) \land r \equiv p \land (q \land r)
 $$
 
     3. 交換律
@@ -137,7 +137,7 @@ $$
     4. 分配律
 
 $$
-  p \lor (q \land r) \equiv (p \lor q) \and (p \lor r)
+  p \lor (q \land r) \equiv (p \lor q) \land (p \lor r)
 $$
 
 $$
