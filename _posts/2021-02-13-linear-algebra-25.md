@@ -27,7 +27,7 @@ author: [zlotus](https://github.com/zlotus/notes-linear-algebra)
 
 微分方程不在本講的範圍內。下面通過往年例題複習上面的知識。
 
-1. *求$$a=\begin{bmatrix}2\\1\\2\end{bmatrix}$$的投影矩陣$P$*：$\Bigg($由$a\bot(b-p)\rightarrow A^T(b-A\hat x)=0$得到$\hat x=\left(A^TA\right)^{-1}A^Tb$，求得$p=A\hat x=A\left(A^TA\right)^{-1}A^Tb=Pb$最終得到$P\Bigg)$$$\underline{P=A\left(A^TA\right)^{-1}A^T}\stackrel{a}=\frac{aa^T}{a^Ta}=\frac{1}{9}\begin{bmatrix}4&2&4\\2&1&2\\4&2&4\end{bmatrix}$$。
+1. *求$$a=\begin{bmatrix}2\\1\\2\end{bmatrix}$$的投影矩陣$P$*：$\Bigg($由$a\bot(b-p)\rightarrow A^T(b-A\hat x)=0$得到$\hat x=\left(A^TA\right)^{-1}A^Tb$，求得$p=A\hat x=A\left(A^TA\right)^{-1}A^Tb=Pb$最終得到$$P\Bigg)$$ $$\underline{P=A\left(A^TA\right)^{-1}A^T}\stackrel{a}=\frac{aa^T}{a^Ta}=\frac{1}{9}\begin{bmatrix}4&2&4\\2&1&2\\4&2&4\end{bmatrix}$$。
    
     *求$P$矩陣的特征值*：觀察矩陣易知矩陣奇異，且為秩一矩陣，則其零空間為$2$維，所以由$Px=0x$得出矩陣的兩個特征向量為$\lambda_1=\lambda_2=0$；而從矩陣的跡得知$trace(P)=1=\lambda_1+\lambda_2+\lambda_3=0+0+1$，則第三個特征向量為$\lambda_3=1$。
     
