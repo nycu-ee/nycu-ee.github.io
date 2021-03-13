@@ -108,6 +108,7 @@ $$
 $$
   p \lor p \equiv p
 $$
+
 $$
   p \land p \equiv p
 $$
@@ -116,6 +117,7 @@ $$
 $$
   (p \lor q) \lor r \equiv p lor (q \lor r)
 $$
+
 $$
   (p \land q) \and r \equiv p \land (q \land r)
 $$
@@ -124,6 +126,7 @@ $$
 $$
   p \lor q \equiv q \lor p
 $$
+
 $$
   p \land q \equiv q \land p
 $$
@@ -132,6 +135,7 @@ $$
 $$
   p \lor (q \land r) \equiv (p \lor q) \and (p \lor r)
 $$
+
 $$
   p \land (q \lor r) \equiv (p \land q) \lor (p \land r)
 $$
@@ -140,6 +144,7 @@ $$
 $$
   p \land T \equiv p, p \lor F \equiv p
 $$
+
 $$
   p \lor T \equiv T, p \land F \equiv F
 $$
@@ -148,6 +153,7 @@ $$
 $$
   p \lor \lnot p \equiv T, p \land \lnot p \equiv F
 $$
+
 $$
   \lnot T \equiv F, \lnot F \equiv T
 $$
@@ -161,6 +167,7 @@ $$
 $$
   \lnot(p \lor q) \equiv \lnot p \land \lnot q
 $$
+
 $$
   \lnot(p \land q) \equiv \lnot p \lor lnot q
 $$
@@ -177,7 +184,7 @@ $$
 
 **真值表**
 
-| p    | q    | p \implies q |
+| p    | q    |$p \implies q$|
 | ---- | ---- | ------------ |
 | T    | T    | T            |
 | T    | F    | F            |
@@ -191,7 +198,7 @@ $$
 p \iff q
 $$
 
-| p    | q    | p \iff q |
+| p    | q    |$p \iff q$|
 | ---- | ---- | -------- |
 | T    | T    | T        |
 | T    | F    | F        |
