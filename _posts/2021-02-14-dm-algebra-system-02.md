@@ -56,7 +56,7 @@ $$
 被稱為 $*$ 的單位元。
 
 $$
-\exist e \in S \implies \forall a \in S \to a * e = e * a = a
+\exists e \in S \implies \forall a \in S \to a * e = e * a = a
 $$
 
 更一般的，對於 $S$ 中的任意元素$a$，如果 $e * a = a$，則 $e$ 稱為左單位元；如果 $a * e = a$，則 $e$ 稱為右單位元。
