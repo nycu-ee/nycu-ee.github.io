@@ -76,4 +76,4 @@ $$
 
 同差分方程一樣，我們來看二階情況如何計算，有$y''+by'+k=0$。我們也模仿差分方程的情形，構造方程組$$\begin{cases}y''&=-by'-ky\\y'&=y'\end{cases}$$，寫成矩陣形式有$$\begin{bmatrix}y''\\y'\end{bmatrix}=\begin{bmatrix}-b&-k\\1&0\end{bmatrix}\begin{bmatrix}y'\\y\end{bmatrix}$$，令$$u'=\begin{bmatrix}y''\\y'\end{bmatrix}, \ u=\begin{bmatrix}y'\\y\end{bmatrix}$$。
 
-繼續推廣，對於$5$階微分方程$y'''''+by''''+cy'''+dy''+ey'+f=0$，則可以寫作$$\begin{bmatrix}y'''''\\y''''\\y'''\\y''\\y'\end{bmatrix}=\begin{bmatrix}-b&-c&-d&-e&-f\\1&0&0&0&0\\0&1&0&0&0\\0&0&1&0&0\\0&0&0&1&0\end{bmatrix}\begin{bmatrix}y''''\\y'''\\y''\\y'\\y\end{bmatrix}$$，這樣我們就把一個五階微分方程化為$5\times 5$一階方程組了，然後就是求特征值、特征向量了步驟了。
+繼續推廣，對於$5$階微分方程$y'''''+by''''+cy'''+dy''+ey'+f=0$，則可以寫作$$\begin{bmatrix}y'''''\\y''''\\y'''\\y''\\y'\end{bmatrix}=\begin{bmatrix}-b&-c&-d&-e&-f\\1&0&0&0&0\\0&1&0&0&0\\0&0&1&0&0\\0&0&0&1&0\end{bmatrix}\begin{bmatrix}y''''\\y'''\\y''\\y'\\y\end{bmatrix}$$，這樣我們就把一個五階微分方程化為$5\times 5$一階方程組了，然後就是求特征值、特征向量的步驟了。
