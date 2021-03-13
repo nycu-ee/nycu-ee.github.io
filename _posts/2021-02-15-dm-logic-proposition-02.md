@@ -9,7 +9,7 @@ author: [o-jules](https://github.com/o-jules)
 
 > Description:
 >
-> 這是關於離散數學的相關筆記，本篇介紹推論	
+> 這是關於離散數學的相關筆記，本篇介紹論證	
 
 <!-- more -->
 
