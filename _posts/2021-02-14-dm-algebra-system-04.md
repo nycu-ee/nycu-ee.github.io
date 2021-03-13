@@ -5,7 +5,7 @@ categories: Mathematic
 tags: [Discrete Mathematic]
 ---
 
-author: [0-jules](https://github.com/o-jules)
+author: [o-jules](https://github.com/o-jules)
 
 > Description:
 >
@@ -67,7 +67,7 @@ $$
 
 **定理** 設 $f: S\to S'$ 是一個半群同態，如果 $f(a) = f(b)$，今 $a ~ b$，則
 
-i. $~$ 是$S$ 上的同余關系；
+i. $~$ 是$S$ 上的同余關系;  
 ii. $S/~$ 同構於 $f(S)$；
 
 ### 半群的積
