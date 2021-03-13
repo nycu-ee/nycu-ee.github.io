@@ -105,6 +105,7 @@ $$
 **定理4.2** 命題滿足如下定律：
 
     1. 冪等律
+
 $$
   p \lor p \equiv p
 $$
@@ -114,6 +115,7 @@ $$
 $$
 
     2. 結合律
+
 $$
   (p \lor q) \lor r \equiv p lor (q \lor r)
 $$
@@ -123,6 +125,7 @@ $$
 $$
 
     3. 交換律
+
 $$
   p \lor q \equiv q \lor p
 $$
@@ -132,6 +135,7 @@ $$
 $$
 
     4. 分配律
+
 $$
   p \lor (q \land r) \equiv (p \lor q) \and (p \lor r)
 $$
@@ -141,6 +145,7 @@ $$
 $$
 
     5. 同一律
+
 $$
   p \land T \equiv p, p \lor F \equiv p
 $$
@@ -150,6 +155,7 @@ $$
 $$
 
     6. 互補律
+
 $$
   p \lor \lnot p \equiv T, p \land \lnot p \equiv F
 $$
@@ -159,11 +165,13 @@ $$
 $$
 
     7. 對合律
+
 $$
   \lnot \lnot p \equiv p
 $$
 
     8. DeMorgan律
+
 $$
   \lnot(p \lor q) \equiv \lnot p \land \lnot q
 $$
