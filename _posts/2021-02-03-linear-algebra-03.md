@@ -11,7 +11,7 @@ author: [zlotus](https://github.com/zlotus/notes-linear-algebra)
 >
 > 這是MIT 18.06 Linear-Algebra 的學習筆記	
 
-[Course video](https://www.youtube.com/watch?v=QVKj3LADCnA&list=PLE7DDD91010BC51F8&index=3&ab_channel=MITOpenCourseWare)
+[Course video](https://www.youtube.com/watch?v=FX4C-JpTFgY&list=PLE7DDD91010BC51F8&index=4)
 
 <!-- more -->
 
@@ -47,7 +47,8 @@ author: [zlotus](https://github.com/zlotus/notes-linear-algebra)
     
     注意，$A_{coli}B_{rowi}$是一個$m\times 1$向量乘以一個$1\times p$向量，其結果是一個$m\times p$矩陣，而所有的$m\times p$矩陣之和就是計算結果。
 
-* 分塊乘法：$\left[\begin{array}{c|c}A_1&A_2\\\\\hline A_3&A_4\end{array}\right]\left[\begin{array}{c|c}B_1&B_2\\\\\hline B_3&B_4\end{array}\right]=\left[\begin{array}{c|c}A_1B_1+A_2B_3&A_1B_2+A_2B_4\\\\\hline A_3B_1+A_4B_3&A_3B_2+A_4B_4\end{array}\right]$
+* 分塊乘法：
+$\left[\begin{array}{c|c}A_1&A_2\\\\\hline A_3&A_4\end{array}\right]\left[\begin{array}{c|c}B_1&B_2\\\\\hline B_3&B_4\end{array}\right]=\left[\begin{array}{c|c}A_1B_1+A_2B_3&A_1B_2+A_2B_4\\\\\hline A_3B_1+A_4B_3&A_3B_2+A_4B_4\end{array}\right]$
 
     在分塊合適的情況下，可以簡化運算。
 
@@ -67,10 +68,13 @@ author: [zlotus](https://github.com/zlotus/notes-linear-algebra)
 
 接下來介紹高斯-若爾當（Gauss-Jordan）方法，該方法可以一次處理所有的方程：
 
-* 這個方程組為$\begin{cases}\begin{bmatrix}1&3\\\\2&7\end{bmatrix}\begin{bmatrix}a\\\\b\end{bmatrix}=\begin{bmatrix}1\\\\0\end{bmatrix}\\\\\begin{bmatrix}1&3\\\\2&7\end{bmatrix}\begin{bmatrix}c\\\\d\end{bmatrix}=\begin{bmatrix}0\\\\1\end{bmatrix}\end{cases}$，我們想要同時解這兩個方程；
+* 這個方程組為
+$\begin{cases}\begin{bmatrix}1&3\\\\2&7\end{bmatrix}\begin{bmatrix}a\\\\b\end{bmatrix}=\begin{bmatrix}1\\\\0\end{bmatrix}\\\\\begin{bmatrix}1&3\\\\2&7\end{bmatrix}\begin{bmatrix}c\\\\d\end{bmatrix}=\begin{bmatrix}0\\\\1\end{bmatrix}\end{cases}$，我們想要同時解這兩個方程；
 
-* 構造這樣一個矩陣$\left[\begin{array}{cc|cc}1&3&1&0\\\\2&7&0&1\end{array}\right]$，接下來用消元法將左側變為單位矩陣；
-* $\left[\begin{array}{cc|cc}1&3&1&0\\\\2&7&0&1\end{array}\right]\xrightarrow{row_2-2row_1}\left[\begin{array}{cc|cc}1&3&1&0\\\\0&1&-2&1\end{array}\right]\xrightarrow{row_1-3row_2}\left[\begin{array}{cc|cc}1&0&7&-3\\\\0&1&-2&1\end{array}\right]$
-* 於是，我們就將矩陣從$\left[\begin{array}{c|c}A&I\end{array}\right]$變為$\left[\begin{array}{c|c}I&A^{-1}\end{array}\right]$
+* 構造這樣一個矩陣
+$\left[\begin{array}{cc|cc}1&3&1&0\\\\2&7&0&1\end{array}\right]$，接下來用消元法將左側變為單位矩陣；
+* $\left[\begin{array}{cc\|cc}1&3&1&0\\\\2&7&0&1\end{array}\right]\xrightarrow{row_2-2row_1}\left[\begin{array}{cc\|cc}1&3&1&0\\\\0&1&-2&1\end{array}\right]\xrightarrow{row_1-3row_2}\left[\begin{array}{cc\|cc}1&0&7&-3\\\\0&1&-2&1\end{array}\right]$
+ 
+* 於是，我們就將矩陣從$\left[\begin{array}{c\|c}A&I\end{array}\right]$變為$\left[\begin{array}{c\|c}I&A^{-1}\end{array}\right]$
 
-而高斯-若爾當法的本質是使用消元矩陣$E$，對$A$進行操作，$E\left[\begin{array}{c|c}A&I\end{array}\right]$，利用一步步消元有$EA=I$，進而得到$\left[\begin{array}{c|c}I&E\end{array}\right]$，其實這個消元矩陣$E$就是$A^{-1}$，而高斯-若爾當法中的$I$只是負責記錄消元的每一步操作，待消元完成，逆矩陣就自然出現了。
+而高斯-若爾當法的本質是使用消元矩陣 $E$，對 $A$進行操作，$E\left[\begin{array}{c\|c}A&I\end{array}\right]$，利用一步步消元有$EA=I$，進而得到$\left[\begin{array}{c\|c}I&E\end{array}\right]$，其實這個消元矩陣 $E$就是 $A^{-1}$，而高斯-若爾當法中的$I$只是負責記錄消元的每一步操作，待消元完成，逆矩陣就自然出現了。

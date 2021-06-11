@@ -5,7 +5,7 @@ categories: Mathematic
 tags: [Discrete Mathematic]
 ---
 
-author: [0-jules](https://github.com/o-jules)
+author: [o-jules](https://github.com/o-jules)
 
 > Description:
 >

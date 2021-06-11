@@ -25,7 +25,7 @@ author: [zlotus](https://github.com/zlotus/notes-linear-algebra)
 
 * 這個初始條件的意義可以看做在開始時一切都在$u_1$中，但隨著時間的推移，將有$\frac{\mathrm{d}u_2}{\mathrm{d}t}>0$，因為$u_1$項初始為正，$u_1$中的事物會流向$u_2$。隨著時間的发展我們可以追蹤流動的變化。
 
-* 根據上一講所學的知識，我們知道第一步需要找到特征值與特征向量。$$A=\begin{bmatrix}-1&2\\1&-2\end{bmatrix}$$，很明顯這是一個奇異矩陣，所以第一個特征值是$\lambda_1=0$，另一個特征向量可以從跡得到$tr(A)=-3$。當然我們也可以用一般方法計算$$\left|A-\lambda I\right|=\begin{vmatrix}-1-\lambda&2\\1&-2-\lambda\end{vmatrix}=\lambda^2+3\lambda=0$$。
+* 根據上一講所學的知識，我們知道第一步需要找到特征值與特征向量。$$A=\begin{bmatrix}-1&2\\1&-2\end{bmatrix}$$，很明顯這是一個奇異矩陣，所以第一個特征值是$\lambda_1=0$，另一個特征向量可以從跡得到$tr(A)=-3$。當然我們也可以用一般方法計算$$\left\|A-\lambda I\right\|=\begin{vmatrix}-1-\lambda&2\\1&-2-\lambda\end{vmatrix}=\lambda^2+3\lambda=0$$。
 
     （教授提前劇透，特征值$\lambda_2=-3$將會逐漸消失，因為答案中將會有一項為$e^{-3t}$，該項會隨著時間的推移趨近於$0$。答案的另一部分將有一項為$e^{0t}$，該項是一個常數，其值為$1$，並不隨時間而改變。通常含有$0$特征值的矩陣會隨著時間的推移達到穩態。）
 
@@ -39,7 +39,7 @@ author: [zlotus](https://github.com/zlotus/notes-linear-algebra)
 
 * 於是我們寫出最終結果，$$u(t)=\frac{1}{3}\begin{bmatrix}2\\1\end{bmatrix}+\frac{1}{3}e^{-3t}\begin{bmatrix}1\\-1\end{bmatrix}$$。
 
-穩定性：這個流動過程從$$u(0)=\begin{bmatrix}1\\0\end{bmatrix}$$開始，初始值$1$的一部分流入初始值$0$中，經過無限的時間最終達到穩態$$u(\infty)=\begin{bmatrix}\frac{2}{3}\\\frac{1}{3}\end{bmatrix}$$。所以，要使得$u(t)\to 0$，則需要負的特征值。但如果特征值為複數呢？如$\lambda=-3+6i$，我們來計算$$\left|e^{(-3+6i)t}\right|$$，其中的$$\left|e^{6it}\right|$$部分為$\left|\cos 6t+i\sin 6t\right|=1$，因為這部分的模為$\cos^2\alpha+\sin^2\alpha=1$，這個虛部就在單位圓上轉悠。所以只有實數部分才是重要的。所以我們可以把前面的結論改為**需要實部為負數的特征值**。實部會決定最終結果趨近於$0$或$\infty$，虛部不過是一些小雜音。
+穩定性：這個流動過程從$$u(0)=\begin{bmatrix}1\\0\end{bmatrix}$$開始，初始值$1$的一部分流入初始值$0$中，經過無限的時間最終達到穩態$$u(\infty)=\begin{bmatrix}\frac{2}{3}\\\frac{1}{3}\end{bmatrix}$$。所以，要使得$u(t)\to 0$，則需要負的特征值。但如果特征值為複數呢？如$\lambda=-3+6i$，我們來計算$$\left\|e^{(-3+6i)t}\right\|$$，其中的$$\left\|e^{6it}\right\|$$部分為$\left\|\cos 6t+i\sin 6t\right\|=1$，因為這部分的模為$\cos^2\alpha+\sin^2\alpha=1$，這個虛部就在單位圓上轉悠。所以只有實數部分才是重要的。所以我們可以把前面的結論改為**需要實部為負數的特征值**。實部會決定最終結果趨近於$0$或$\infty$，虛部不過是一些小雜音。
 
 收斂態：需要其中一個特征值實部為$0$，而其他特征值的實部皆小於$0$。
 
@@ -76,4 +76,4 @@ $$
 
 同差分方程一樣，我們來看二階情況如何計算，有$y''+by'+k=0$。我們也模仿差分方程的情形，構造方程組$$\begin{cases}y''&=-by'-ky\\y'&=y'\end{cases}$$，寫成矩陣形式有$$\begin{bmatrix}y''\\y'\end{bmatrix}=\begin{bmatrix}-b&-k\\1&0\end{bmatrix}\begin{bmatrix}y'\\y\end{bmatrix}$$，令$$u'=\begin{bmatrix}y''\\y'\end{bmatrix}, \ u=\begin{bmatrix}y'\\y\end{bmatrix}$$。
 
-繼續推廣，對於$5$階微分方程$y'''''+by''''+cy'''+dy''+ey'+f=0$，則可以寫作$$\begin{bmatrix}y'''''\\y''''\\y'''\\y''\\y'\end{bmatrix}=\begin{bmatrix}-b&-c&-d&-e&-f\\1&0&0&0&0\\0&1&0&0&0\\0&0&1&0&0\\0&0&0&1&0\end{bmatrix}\begin{bmatrix}y''''\\y'''\\y''\\y'\\y\end{bmatrix}$$，這樣我們就把一個五階微分方程化為$5\times 5$一階方程組了，然後就是求特征值、特征向量了步驟了。
+繼續推廣，對於$5$階微分方程$y'''''+by''''+cy'''+dy''+ey'+f=0$，則可以寫作$$\begin{bmatrix}y'''''\\y''''\\y'''\\y''\\y'\end{bmatrix}=\begin{bmatrix}-b&-c&-d&-e&-f\\1&0&0&0&0\\0&1&0&0&0\\0&0&1&0&0\\0&0&0&1&0\end{bmatrix}\begin{bmatrix}y''''\\y'''\\y''\\y'\\y\end{bmatrix}$$，這樣我們就把一個五階微分方程化為$5\times 5$一階方程組了，然後就是求特征值、特征向量的步驟了。

@@ -5,7 +5,7 @@ categories: Mathematic
 tags: [Discrete Mathematic]
 ---
 
-author: [0-jules](https://github.com/o-jules)
+author: [o-jules](https://github.com/o-jules)
 
 > Description:
 >
@@ -13,7 +13,7 @@ author: [0-jules](https://github.com/o-jules)
 
 <!-- more -->
 
-##　半群
+## 半群
 
 設 $S$ 是定義了一個運算的**非空集合**，若該運算是可結合的，則稱 $S$ 為半群；若該運算還有一個單位元，則稱 $S$ 為幺半群。
 
@@ -67,8 +67,8 @@ $$
 
 **定理** 設 $f: S\to S'$ 是一個半群同態，如果 $f(a) = f(b)$，今 $a ~ b$，則
 
-i. $~$ 是$S$ 上的同余關系；
-ii. $S/~$ 同構於 $f(S)$；
+1. $~$ 是$S$ 上的同余關系; 
+2. $S/~$ 同構於 $f(S)$；
 
 ### 半群的積
 
