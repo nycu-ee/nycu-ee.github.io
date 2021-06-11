@@ -27,7 +27,7 @@ author: [zlotus](https://github.com/zlotus/notes-linear-algebra)
 
 用矩陣語言描述為$$A\Bigg[v_1\ v_2\ \cdots\ v_r\Bigg]=\Bigg[\sigma_1u_1\ \sigma_2u_2\ \cdots\ \sigma_ru_r\Bigg]=\Bigg[u_1\ u_2\ \cdots\ u_r\Bigg]\begin{bmatrix}\sigma_1&&&\\&\sigma_2&&\\&&\ddots&\\&&&\sigma_n\end{bmatrix}$$，即$$Av_1=\sigma_1u_1,\ Av_2=\sigma_2u_2,\cdots,Av_r=\sigma_ru_r$$，這些$$\sigma$$是縮放因子，表示在轉換過程中有拉伸或壓縮。而$$A$$的左零空間和零空間將體現在$$\sigma$$的零值中。
 
-另外，如果算上左零、零空間，我們同樣可以對左零、零空間取標準正交基，然後寫為$$A\Bigg[v_1\ v_2\ \cdots\ v_r\ v_{r+1}\ \cdots\ v_m\Bigg]=\Bigg[u_1\ u_2\ \cdots\ u_r\ u_{r+1}\ \cdots \ u_n\Bigg]\left[\begin{array}{c c c|c}\sigma_1&&&\\&\ddots&&\\&&\sigma_r&\\\hline&&&\begin{bmatrix}0\end{bmatrix}\end{array}\right]$$，此時$$U$$是$$m\times m$$正交矩陣，$$\varSigma$$是$$m\times n$$對角矩陣，$$V^T$$是$$n\times n$$正交矩陣。
+另外，如果算上左零、零空間，我們同樣可以對左零、零空間取標準正交基，然後寫為$$A\Bigg[v_1\ v_2\ \cdots\ v_r\ v_{r+1}\ \cdots\ v_m\Bigg]=\Bigg[u_1\ u_2\ \cdots\ u_r\ u_{r+1}\ \cdots \ u_n\Bigg]\left[\begin{array}{c c c\|c}\sigma_1&&&\\&\ddots&&\\&&\sigma_r&\\\hline&&&\begin{bmatrix}0\end{bmatrix}\end{array}\right]$$，此時$$U$$是$$m\times m$$正交矩陣，$$\varSigma$$是$$m\times n$$對角矩陣，$$V^T$$是$$n\times n$$正交矩陣。
 
 最終可以寫為$$AV=U\varSigma$$，可以看出這十分類似對角化的公式，矩陣$$A$$被轉化為對角矩陣$$\varSigma$$，我們也注意到$$U,\ V$$是兩組不同的正交基。（在正定的情況下，$$U,\ V$$都變成了$$Q$$。）。進一步可以寫作$$A=U\varSigma V^{-1}$$，因為$$V$$是標準正交矩陣所以可以寫為$$A=U\varSigma V^T$$
 
