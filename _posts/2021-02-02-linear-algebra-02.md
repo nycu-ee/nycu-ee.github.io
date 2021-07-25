@@ -28,13 +28,14 @@ author: [zlotus](https://github.com/zlotus/notes-linear-algebra)
 * 第一步，我們希望在第二個方程中消去$x$項，來操作係數矩陣$A=\begin{bmatrix}\underline{1}&2&1\\\\3&8&1\\\\0&4&1\end{bmatrix}$，下劃線的元素為第一步的主元（pivot）：$\begin{bmatrix}\underline{1}&2&1\\\\3&8&1\\\\0&4&1\end{bmatrix}\xrightarrow{row_2-3row_1}\begin{bmatrix}\underline{1}&2&1\\\\0&2&-2\\\\0&4&1\end{bmatrix}$
 
     這裡我們先不管$b$向量，等做完$A$的消元可以再做$b$的消元。 （這是MATLAB等工具經常使用的算法。）
-* 第二步，我們希望在第三個方程中消去$y$項，現在第二列第一個非零元素成為了第二個主元：$\begin{bmatrix}\underline{1}&2&1\\\\0&\underline{2}&-2\\\\0&4&1\end{bmatrix}\xrightarrow{row_3-2row_2}\begin{bmatrix}\underline{1}&2&1\\\\0&\underline{2}&-2\\0&0&\underline{5}\end{bmatrix}$
+* 第二步，我們希望在第三個方程中消去$y$項，現在第二列第一個非零元素成為了第二個主元：$\begin{bmatrix}\underline{1}&2&1\\\\0&\underline{2}&-2\\\\0&4&1\end{bmatrix}\xrightarrow{row_3-2row_2}\begin{bmatrix}\underline{1}&2&1\\\\0&\underline{2}&-2\\\\0&0&\underline{5}\end{bmatrix}$
   
     注意到第三列消元過後僅剩一個非零元素，所以它就成為第三個主元。做到這裡就算消元完成了。
 
 再來討論一下消元失效的情形：首先，主元不能為零；其次，如果在消元時遇到主元位置為零，則需要交換列，使主元不為零；最後提一下，如果我們把第三個方程$z$前的係數成$-4$，會導致第二步消元時最後一列全部為零，則第三個主元就不存在了，至此消元不能繼續進行了，這就是下一講中涉及的不可逆情況。
 
-* 接下來就該回代（back substitution）了，這時我們在$A$矩陣後面加上$b$向量寫成增廣矩陣（augmented matrix）的形式：$\left[\begin{array}{c|c}A&b\end{array}\right]=\left[\begin{array}{ccc|c}1&2&1&2\\\\3&8&1&12\\\\0&4&1&2\end{array}\right]\to\left[\begin{array}{ccc|c}1&2&1&2\\\\0&2&-2&6\\\\0&4&1&2\end{array}\right]\to\left[\begin{array}{ccc|c}1&2&1&2\\\\0&2&-2&6\\\\0&0&5&-10\end{array}\right]$
+* 接下來就該回代（back substitution）了，這時我們在$A$矩陣後面加上$b$向量寫成增廣矩陣（augmented matrix）的形式：
+$\left[\begin{array}{c|c}A&b\end{array}\right]=\left[\begin{array}{ccc|c}1&2&1&2\\\\3&8&1&12\\\\0&4&1&2\end{array}\right]\to\left[\begin{array}{ccc|c}1&2&1&2\\\\0&2&-2&6\\\\0&4&1&2\end{array}\right]\to\left[\begin{array}{ccc|c}1&2&1&2\\\\0&2&-2&6\\\\0&0&5&-10\end{array}\right]$
 
     不難看出，$z$的解已經出現了，此時方程組變為$\begin{cases}x&+2y&+z&=2\\\\&2y&-2z&=6\\\\&&5z&=-10\end{cases}$，從第三個方程求出$z=-2$，代入第二個方程求出$y=1$，在代入第一個方程求出$x=2$。
 
@@ -48,7 +49,7 @@ author: [zlotus](https://github.com/zlotus/notes-linear-algebra)
 
 * 消元法第一步操作為將第二列改成$row_2-3row_1$，其餘兩行不變，則有$\begin{bmatrix}1&0&0\\\\-3&1&0\\\\0&0&1\end{bmatrix}\begin{bmatrix}1&2&1\\\\3&8&1\\\\0&4&1\end{bmatrix}=\begin{bmatrix}1&2&1\\\\0&2&-2\\\\0&4&1\end{bmatrix}$（另外，如果三列都不變，消元矩陣就是單位矩陣$I=\begin{bmatrix}1&0&0\\\\0&1&0\\\\0&0&1\end{bmatrix}$，$I$之於矩陣運算相當於$1$之於四則運算。 ）這個消元矩陣我們記作$E_{21}$，即將第二列第一個元素變為零。
 
-* 接下來就是求$E_{32}$消元矩陣了，即將第三列第二個元素變為零，則$\begin{bmatrix}1&0&0\\0&1&0\\\\0&-2&1\end{bmatrix}\begin{bmatrix}1&2&1\\\\0&2&-2\\\\0&4&1\end{bmatrix}=\begin{bmatrix}1&2&1\\\\0&2&-2\\\\0&0&5\end{bmatrix}$。這就是消元所用的兩個初等矩陣（elementary matrix）。
+* 接下來就是求$E_{32}$消元矩陣了，即將第三列第二個元素變為零，則$\begin{bmatrix}1&0&0\\\\0&1&0\\\\0&-2&1\end{bmatrix}\begin{bmatrix}1&2&1\\\\0&2&-2\\\\0&4&1\end{bmatrix}=\begin{bmatrix}1&2&1\\\\0&2&-2\\\\0&0&5\end{bmatrix}$。這就是消元所用的兩個初等矩陣（elementary matrix）。
 
 * 最後，我們將這兩步綜合起來，即$E_{32}(E_{12}A)=U$，也就是說如果我們想從$A$矩陣直接得到$U$矩陣的話，只需要$ (E_{32}E_{21})A$即可。注意，矩陣乘法雖然不能隨意變動相乘次序，但是可以變動括號位置，也就是滿足結合律（associative law），而結合律在矩陣運算中非常重要，很多定理的證明都需要巧妙的使用結合律。
 

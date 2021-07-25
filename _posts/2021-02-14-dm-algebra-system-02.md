@@ -5,7 +5,7 @@ categories: Mathematic
 tags: [Discrete Mathematic]
 ---
 
-author: [0-jules](https://github.com/o-jules)
+author: [o-jules](https://github.com/o-jules)
 
 > Description:
 >
@@ -18,9 +18,9 @@ author: [0-jules](https://github.com/o-jules)
 ## 運算
 
 設 $S$ 是一個非空集合，集合 $S$ 上的一個運算是 $S\times S$ 到 $S$ 的一個函數 $*$，通常記：
-$$
-a * b, ab
-$$
+
+$a * b, ab$
+
 而不記為 $*(a, b)$。
 集合 $S$ 和 $S$ 上的一個運算 $*$ 記為 $(S, *)$ 或當運算明確時簡記為 $S$。
 
@@ -56,7 +56,7 @@ $$
 被稱為 $*$ 的單位元。
 
 $$
-\exist e in S \implies \forall a in S \to a * e = e * a = a
+\exists e \in S \implies \forall a \in S \to a * e = e * a = a
 $$
 
 更一般的，對於 $S$ 中的任意元素$a$，如果 $e * a = a$，則 $e$ 稱為左單位元；如果 $a * e = a$，則 $e$ 稱為右單位元。

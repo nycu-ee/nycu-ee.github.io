@@ -19,17 +19,17 @@ author: [o-jules](https://github.com/o-jules)
 
 **命題**（或**陳述**）是一個說明性語句，它只能是真或假，不可能兩者同時成立。
 
-## 覆合命題
+## 複合命題
 
-**覆合命題** 由*子命題*及它們之間的各種聯系組成的命題稱為覆合命題。
+**複合命題** 由**子命題**及它們之間的各種聯系組成的命題稱為複合命題。
 
-**原子命題** 不能被分解為更簡單的命題（非覆合命題）稱為原子命題
+**原子命題** 不能被分解為更簡單的命題（非複合命題）稱為原子命題
 
 ## 基本邏輯運算
 
 **合取聯結**
 
-任何兩個命題可以用術語“與”聯合而成一個覆合命題，叫做這兩個原始命題的合取聯結。記作：
+任何兩個命題可以用術語“與”聯合而成一個複合命題，叫做這兩個原始命題的合取聯結。記作：
 
 $$
 p \land q
@@ -41,7 +41,7 @@ $$
 
 **析取聯結**
 
-任何兩個命題可以用術語“或”聯合而成一個覆合命題，叫做這兩個原始命題的析取聯結。記作：
+任何兩個命題可以用術語“或”聯合而成一個複合命題，叫做這兩個原始命題的析取聯結。記作：
 
 $$
 p \lor q
@@ -105,64 +105,79 @@ $$
 **定理4.2** 命題滿足如下定律：
 
     1. 冪等律
+
 $$
   p \lor p \equiv p
 $$
+
 $$
   p \land p \equiv p
 $$
 
     2. 結合律
+
 $$
   (p \lor q) \lor r \equiv p lor (q \lor r)
 $$
+
 $$
-  (p \land q) \and r \equiv p \land (q \land r)
+  (p \land q) \land r \equiv p \land (q \land r)
 $$
 
     3. 交換律
+
 $$
   p \lor q \equiv q \lor p
 $$
+
 $$
   p \land q \equiv q \land p
 $$
 
     4. 分配律
+
 $$
-  p \lor (q \land r) \equiv (p \lor q) \and (p \lor r)
+  p \lor (q \land r) \equiv (p \lor q) \land (p \lor r)
 $$
+
 $$
   p \land (q \lor r) \equiv (p \land q) \lor (p \land r)
 $$
 
     5. 同一律
+
 $$
   p \land T \equiv p, p \lor F \equiv p
 $$
+
 $$
   p \lor T \equiv T, p \land F \equiv F
 $$
 
     6. 互補律
+
 $$
   p \lor \lnot p \equiv T, p \land \lnot p \equiv F
 $$
+
 $$
   \lnot T \equiv F, \lnot F \equiv T
 $$
 
     7. 對合律
+
 $$
   \lnot \lnot p \equiv p
 $$
 
     8. DeMorgan律
+
 $$
   \lnot(p \lor q) \equiv \lnot p \land \lnot q
 $$
+
 $$
-  \lnot(p \land q) \equiv \lnot p \lor lnot q
+  \lnot(p \land q) \equiv \lnot p \lor \lnot q
 $$
 
 ## 條件語句與雙條件語句
@@ -177,7 +192,7 @@ $$
 
 **真值表**
 
-| p    | q    | p \implies q |
+| p    | q    |$p \implies q$|
 | ---- | ---- | ------------ |
 | T    | T    | T            |
 | T    | F    | F            |
@@ -191,7 +206,7 @@ $$
 p \iff q
 $$
 
-| p    | q    | p \iff q |
+| p    | q    |$p \iff q$|
 | ---- | ---- | -------- |
 | T    | T    | T        |
 | T    | F    | F        |

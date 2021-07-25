@@ -25,7 +25,7 @@ Markdown是一種輕量級標記式語言，創始人為約翰·格魯伯。它�
 
 請開啟Typora
 
-先儲存並將檔案命名為:**YYYY:MM:DD-(你在本網站想使用的作者名)-introduction.md**
+先儲存並將檔案命名為:**YYYY-MM-DD-你在本網站想使用的作者名-introduction.md**
 
 並在檔案中加入以下程式碼
 

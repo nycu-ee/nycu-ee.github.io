@@ -18,14 +18,14 @@ author: [zlotus](https://github.com/zlotus/notes-linear-algebra)
 # 第七講：求解$Ax=0$，主變量，特解
 
 舉例：$3 \times 4$矩陣
-$
+$$
 A=
 \begin{bmatrix}
-1 & 2 & 2 & 2\\
-2 & 4 & 6 & 8\\
-3 & 6 & 8 & 10\\
+1 & 2 & 2 & 2 \\
+2 & 4 & 6 & 8 \\
+3 & 6 & 8 & 10 \\
 \end{bmatrix}
-$，求$Ax=0$的特解：
+$$，求$Ax=0$的特解：
 
 找出主變量（pivot variable）：
 $$
@@ -50,9 +50,9 @@ $$
 自由行中的變量為自由變量（free variable），自由變量的個數為$n-r=4-2=2$。
 
 通常，給自由行變量賦值，去求主行變量的值。如，令$x_2=1, x_4=0$求得特解
-$x=c_1\begin{bmatrix}-2\\1\\0\\0\\\end{bmatrix}$；
+$x=c_1\begin{bmatrix}-2\\\\1\\\\0\\\\0\\\\\end{bmatrix}$；
 再令$x_2=0, x_4=1$求得特解
-$x=c_2\begin{bmatrix}2\\0\\-2\\1\\\end{bmatrix}$。
+$x=c_2\begin{bmatrix}2\\\\0\\\\-2\\\\1\\\\\end{bmatrix}$。
 
 該例還能進一步簡化，即將$U$矩陣化簡為$R$矩陣（Reduced row echelon form），即簡化列階梯形式。
 
@@ -97,6 +97,7 @@ I & F \\
 \textrm{，其中}I\textrm{為單位矩陣，}F\textrm{為自由變量組成的矩陣}
 $$
 計算零空間矩陣$N$（nullspace matrix），其列為特解，有$RN=0$。
+
 $$
 x_{pivot}=-Fx_{free} \\
 \begin{bmatrix}
@@ -113,7 +114,7 @@ I \\
 $$
 
 在本例中
-$
+$$
 N=
 \begin{bmatrix}
 -2 & 2 \\
@@ -121,10 +122,10 @@ N=
 1 & 0 \\
 0 & 1 \\
 \end{bmatrix}
-$，與上面求得的兩個$x$特解一致。
+$$，與上面求得的兩個$x$特解一致。
 
 另一個例子，矩陣
-$
+$$
 A=
 \begin{bmatrix}
 1 & 2 & 3 \\
@@ -147,16 +148,16 @@ A=
 0 & 0 & 0 \\
 \end{bmatrix}
 =R
-$
+$$
 
 矩陣的秩仍為$r=2$，有$2$個主變量，$1$個自由變量。
 
 同上一例，取自由變量為$x_3=1$，求得特解
-$
+$$
 x=c
 \begin{bmatrix}
 -1 \\
 -1 \\
 1 \\
 \end{bmatrix}
-$
+$$
