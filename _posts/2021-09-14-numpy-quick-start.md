@@ -1,5 +1,4 @@
 ---
-
 layout: post
 title: Numpy Quick Start
 categories: Dev
