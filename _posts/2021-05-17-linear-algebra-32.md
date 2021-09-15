@@ -105,7 +105,7 @@ $$\begin{bmatrix}1\\1\\1\\1\\1\\1\\1\\1\end{bmatrix}
     
     對於第一組基$$v_1,v_2,\cdots,v_8$$，要完全了解線性變換$$T$$，只需要知道$$T$$作用在基的每一個向量上會產生什麽結果即可。因為在這個基下的每一個向量都可以寫成$$x=c_1v_1+c_2v_2+\cdots+c_8v_8$$的形式，所以$$T(x)=c_1T(v_1)+c_2T(v_2)+\cdots+c_8T(v_8)$$。
     
-    而且$$T(v_1)=a_{11}v_1+a_{21}v_2+\cdots+a_{81}v_8,\ T(v_2)=a_{12}v_1+a_{22}v_2+\cdots+a_{82}v_8,\ \cdots$$，則矩陣$$\begin{bmatrix}A\end{bmatrix}=\left[\begin{array}{c|c|c|c}a_{11}&a_{12}&\cdots&a_{1n}\\a_{21}&a_{22}&\cdots&a_{2n}\\\vdots&\vdots&\ddots&\vdots\\a_{m1}&a_{m2}&\cdots&a_{mn}\\\end{array}\right]$$
+    而且$$T(v_1)=a_{11}v_1+a_{21}v_2+\cdots+a_{81}v_8,\ T(v_2)=a_{12}v_1+a_{22}v_2+\cdots+a_{82}v_8,\ \cdots$$，則矩陣$$\begin{bmatrix}A\end{bmatrix}=\left[\begin{array}{c\|c\|c\|c}a_{11}&a_{12}&\cdots&a_{1n}\\a_{21}&a_{22}&\cdots&a_{2n}\\\vdots&\vdots&\ddots&\vdots\\a_{m1}&a_{m2}&\cdots&a_{mn}\\\end{array}\right]$$
     
     這些都是上一講結尾所涉及的知識。
 

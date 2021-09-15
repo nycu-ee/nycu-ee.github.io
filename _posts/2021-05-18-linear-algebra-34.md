@@ -72,9 +72,9 @@ $$A^{-1}_{right}=A^T\left(AA^T\right)$$
 
 接下來我們介紹如何計算偽逆$$A^+$$：
 
-其中一種方法是使用奇異值分解，$$A=U\varSigma V^T$$，其中的對角矩陣型為$$\varSigma=\left[\begin{array}{c c c|c}\sigma_1&&&\\&\ddots&&\\&&\sigma_2&\\\hline&&&\begin{bmatrix}0\end{bmatrix}\end{array}\right]$$，對角線非零的部分來自$$A^TA,\ AA^T$$比較好的部分，剩下的來自左零空間。
+其中一種方法是使用奇異值分解，$$A=U\varSigma V^T$$，其中的對角矩陣型為$$\varSigma=\left[\begin{array}{c c c\|c}\sigma_1&&&\\&\ddots&&\\&&\sigma_2&\\\hline&&&\begin{bmatrix}0\end{bmatrix}\end{array}\right]$$，對角線非零的部分來自$$A^TA,\ AA^T$$比較好的部分，剩下的來自左零空間。
 
-我們先來看一下$$\varSigma$$矩陣的偽逆是多少，這是一個$$m\times n$$矩陣，$$rank(\varSigma)=r$$，$$\varSigma^+=\left[\begin{array}{c c c|c}\frac{1}{\sigma_1}&&&\\&\ddots&&\\&&\frac{1}{\sigma_r}&\\\hline&&&\begin{bmatrix}0\end{bmatrix}\end{array}\right]$$，偽逆與原矩陣有個小區別：這是一個$$n\times m$$矩陣。則有$$\varSigma\varSigma^+=\left[\begin{array}{c c c|c}1&&&\\&\ddots&&\\&&1&\\\hline&&&\begin{bmatrix}0\end{bmatrix}\end{array}\right]_{m\times m}$$，$$\varSigma^+\varSigma=\left[\begin{array}{c c c|c}1&&&\\&\ddots&&\\&&1&\\\hline&&&\begin{bmatrix}0\end{bmatrix}\end{array}\right]_{n\times n}$$。
+我們先來看一下$$\varSigma$$矩陣的偽逆是多少，這是一個$$m\times n$$矩陣，$$rank(\varSigma)=r$$，$$\varSigma^+=\left[\begin{array}{c c c\|c}\frac{1}{\sigma_1}&&&\\&\ddots&&\\&&\frac{1}{\sigma_r}&\\\hline&&&\begin{bmatrix}0\end{bmatrix}\end{array}\right]$$，偽逆與原矩陣有個小區別：這是一個$$n\times m$$矩陣。則有$$\varSigma\varSigma^+=\left[\begin{array}{c c c\|c}1&&&\\&\ddots&&\\&&1&\\\hline&&&\begin{bmatrix}0\end{bmatrix}\end{array}\right]_{m\times m}$$，$$\varSigma^+\varSigma=\left[\begin{array}{c c c\|c}1&&&\\&\ddots&&\\&&1&\\\hline&&&\begin{bmatrix}0\end{bmatrix}\end{array}\right]_{n\times n}$$。
 
 觀察$$\varSigma\varSigma^+$$和$$\varSigma^+\varSigma$$不難发現，$$\varSigma\varSigma^+$$是將向量投影到行空間上的投影矩陣，而$$\varSigma^+\varSigma$$是將向量投影到列空間上的投影矩陣。我們不論是左乘還是右乘偽逆，得到的不是單位矩陣，而是投影矩陣，該投影將向量帶入比較好的空間（列空間和行空間，而不是左零空間）。
 

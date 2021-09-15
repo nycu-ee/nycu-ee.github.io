@@ -183,7 +183,7 @@ plt.close(fig)
 * 計算$$T(v_1)=a_{11}w_1+a_{21}w_2+\cdots+a_{m1}w_m$$，求出的系數$$a_{i1}$$就是矩陣$$A$$的第一行；
 * 繼續計算$$T(v_2)=a_{12}w_1+a_{22}w_2+\cdots+a_{m2}w_m$$，求出的系數$$a_{i2}$$就是矩陣$$A$$的第二行；
 * 以此類推計算剩余向量直到$$v_n$$；
-* 最終得到矩陣$$A=\left[\begin{array}{c|c|c|c}a_{11}&a_{12}&\cdots&a_{1n}\\a_{21}&a_{22}&\cdots&a_{2n}\\\vdots&\vdots&\ddots&\vdots\\a_{m1}&a_{m2}&\cdots&a_{mn}\\\end{array}\right]$$。
+* 最終得到矩陣$$A=\left[\begin{array}{c\|c\|c\|c}a_{11}&a_{12}&\cdots&a_{1n}\\a_{21}&a_{22}&\cdots&a_{2n}\\\vdots&\vdots&\ddots&\vdots\\a_{m1}&a_{m2}&\cdots&a_{mn}\\\end{array}\right]$$。
 
 最後我們介紹一種不一樣的線性變換，$$T=\frac{\mathrm{d}}{\mathrm{d}x}$$：
 

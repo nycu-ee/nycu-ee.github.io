@@ -25,9 +25,9 @@ author: [zlotus](https://github.com/zlotus/notes-linear-algebra)
 
 ### 計算複向量的模
 
-對比實向量，我們計算模只需要計算$$\left|v\right|=\sqrt{v^Tv}$$即可，而如果對複向量使用$$z^Tz$$則有$$z^Tz=\begin{bmatrix}z_1&z_2&\cdots&z_n\end{bmatrix}\begin{bmatrix}z_1\\z_2\\\vdots\\z_n\end{bmatrix}=z_1^2+z_2^2+\cdots+z_n^2$$，這里$$z_i$$是複數，平方後虛部為負，求模時本應相加的運算變成了減法。（如向量$$\begin{bmatrix}1&i\end{bmatrix}$$，右乘其轉置後結果為$$0$$，但此向量的長度顯然不是零。）
+對比實向量，我們計算模只需要計算$$\left\|v\right\|=\sqrt{v^Tv}$$即可，而如果對複向量使用$$z^Tz$$則有$$z^Tz=\begin{bmatrix}z_1&z_2&\cdots&z_n\end{bmatrix}\begin{bmatrix}z_1\\z_2\\\vdots\\z_n\end{bmatrix}=z_1^2+z_2^2+\cdots+z_n^2$$，這里$$z_i$$是複數，平方後虛部為負，求模時本應相加的運算變成了減法。（如向量$$\begin{bmatrix}1&i\end{bmatrix}$$，右乘其轉置後結果為$$0$$，但此向量的長度顯然不是零。）
 
-根據上一講我們知道，應使用$$\left|z\right|=\sqrt{\bar{z}^Tz}$$，即$$\begin{bmatrix}\bar z_1&\bar z_2&\cdots&\bar z_n\end{bmatrix}\begin{bmatrix}z_1\\z_2\\\vdots\\z_n\end{bmatrix}$$，即使用向量共軛的轉置乘以原向量即可。（如向量$$\begin{bmatrix}1&i\end{bmatrix}$$，右乘其共軛轉置後結果為$$\begin{bmatrix}1&-i\end{bmatrix}\begin{bmatrix}1\\i\end{bmatrix}=2$$。）
+根據上一講我們知道，應使用$$\left\|z\right\|=\sqrt{\bar{z}^Tz}$$，即$$\begin{bmatrix}\bar z_1&\bar z_2&\cdots&\bar z_n\end{bmatrix}\begin{bmatrix}z_1\\z_2\\\vdots\\z_n\end{bmatrix}$$，即使用向量共軛的轉置乘以原向量即可。（如向量$$\begin{bmatrix}1&i\end{bmatrix}$$，右乘其共軛轉置後結果為$$\begin{bmatrix}1&-i\end{bmatrix}\begin{bmatrix}1\\i\end{bmatrix}=2$$。）
 
 我們把共軛轉置乘以原向量記為$$z^Hz$$，$$H$$讀作埃爾米特（人名為Hermite，形容詞為Hermitian）
 
