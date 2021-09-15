@@ -161,7 +161,7 @@ iverilog -g2012 led_demo.vhd
 
 # Renference
 
-[Icarus]: http://iverilog.icarus.com/
-[GTKWave]: http://gtkwave.sourceforge.net/
-[test source code]: https://zhuanlan.zhihu.com/p/95081329
+[Icarus](http://iverilog.icarus.com/)
+[GTKWave](http://gtkwave.sourceforge.net/)
+[test source code](https://zhuanlan.zhihu.com/p/95081329)
 
