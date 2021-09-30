@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 離散數學-代數系統-01
+title: 離散數學-代數系統-術語
 categories: Mathematic
 tags: [Discrete Mathematic]
 ---
