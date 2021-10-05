@@ -50,7 +50,7 @@ a3 = np.arange(24).reshape(2,3,4) # 3d array
 
 b = np.array([1, 2, 3], dtype=complex) # assign dtype=complex
 
-np.zeros((3.4)) # 3*4 array filled with 0
+np.zeros((3,4)) # 3*4 array filled with 0
 
 np.ones((2,3,4), dtype=np.int16) # 2*3*4 array filled with 1 
 
