@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 離散數學-代數系統-03
+title: 離散數學-代數系統-群
 categories: Mathematic
 tags: [Discrete Mathematic]
 ---

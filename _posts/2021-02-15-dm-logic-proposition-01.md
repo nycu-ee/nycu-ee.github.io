@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 離散數學-邏輯符號-01
+title: 離散數學-邏輯與命題-基本概念
 categories: Mathematic
 tags: [Discrete Mathematic]
 ---
